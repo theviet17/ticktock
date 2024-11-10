@@ -1,0 +1,50 @@
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+*Thumbs.db
+*ehthumbs.db
+*Desktop.ini
+*.Trash-*
+
+# Tệp biên dịch và xây dựng
+*/build/*
+*/dist/*
+*/out/*
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+
+# Thư viện và dependency cài đặt
+*/node_modules/*
+*/venv/*
+*__pycache__/*
+*/target/*
+*.class
+
+# Unity
+*/Library/*
+*/Temp/*
+*/Obj/*
+*/Logs/*
+*/[Bb]uild/*
+*/[Bb]uilds/*
+*/Assets/AssetStoreTools*
+
+# .NET
+*/bin/*
+*/obj/*
+
+# Cấu hình IDE
+*.idea/*
+*/.vscode/*
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Tệp tin chứa thông tin nhạy cảm
+*.env
+*.env.local
+Test/My project/Library

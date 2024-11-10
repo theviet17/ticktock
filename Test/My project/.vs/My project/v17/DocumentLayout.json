@@ -1,0 +1,437 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Testa\\Testa\\Test\\My project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\testa\\testa\\test\\my project\\assets\\spineanimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\spineanimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\vtt\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\vtt\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\level\\level2\\nailhammereffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level2\\nailhammereffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\level\\level1\\knifethrowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level1\\knifethrowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\prefab\\ui\\script\\customtoggle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\prefab\\ui\\script\\customtoggle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\level\\level1\\knift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level1\\knift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\watermelonelevel\\watermelonlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\watermelonelevel\\watermelonlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\watermelonelevel\\kinfewatermelonlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\watermelonelevel\\kinfewatermelonlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\acne\\building\\citybuildingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\acne\\building\\citybuildingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\labubu\\labubumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\labubu\\labubumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\cockroachlevel\\cockroachlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\cockroachlevel\\cockroachlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\Knift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Testa\\Testa\\Test\\My project\\assets\\spritecutter\\_example\\linecastcutter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\spritecutter\\_example\\linecastcutter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\BoomWireManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\BomberWire\\BoomWireManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\PingPongMover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\BomberWire\\PingPongMover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\UIManager.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\UIManager.cs",
+              "RelativeToolTip": "Assets\\UIManager.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAvwFkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T03:50:35.577Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KnifeThrowManager.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Level\\Level1\\KnifeThrowManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Level\\Level1\\KnifeThrowManager.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Level\\Level1\\KnifeThrowManager.cs",
+              "RelativeToolTip": "Assets\\Level\\Level1\\KnifeThrowManager.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAA9wH8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:36:09.766Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NailHammerEffect.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Level\\Level2\\NailHammerEffect.cs",
+              "RelativeDocumentMoniker": "Assets\\Level\\Level2\\NailHammerEffect.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Level\\Level2\\NailHammerEffect.cs",
+              "RelativeToolTip": "Assets\\Level\\Level2\\NailHammerEffect.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAowFEAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T16:32:20.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Setting.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Setting.cs",
+              "RelativeDocumentMoniker": "Assets\\Setting.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Setting.cs",
+              "RelativeToolTip": "Assets\\Setting.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAawFcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T04:54:37.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Knift.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Level\\Level1\\Knift.cs",
+              "RelativeDocumentMoniker": "Assets\\Level\\Level1\\Knift.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Level\\Level1\\Knift.cs",
+              "RelativeToolTip": "Assets\\Level\\Level1\\Knift.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAuwJcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:36:19.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomToggle.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Prefab\\UI\\Script\\CustomToggle.cs",
+              "RelativeDocumentMoniker": "Assets\\Prefab\\UI\\Script\\CustomToggle.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Prefab\\UI\\Script\\CustomToggle.cs",
+              "RelativeToolTip": "Assets\\Prefab\\UI\\Script\\CustomToggle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T05:51:24.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UIAnimation.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\VTT\\UI\\UIAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\VTT\\UI\\UIAnimation.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\VTT\\UI\\UIAnimation.cs",
+              "RelativeToolTip": "Assets\\VTT\\UI\\UIAnimation.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAtwG8AAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T03:48:08.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WaterMelonLevelManager.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
+              "RelativeToolTip": "Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T17:15:23.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KinfeWaterMelonLevel.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
+              "RelativeDocumentMoniker": "Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
+              "RelativeToolTip": "Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T17:16:56.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PhichDien.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwDQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T12:02:02.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ElectricWireManager.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:55:34.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CityBuildingManager.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Acne\\Building\\CityBuildingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Acne\\Building\\CityBuildingManager.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Acne\\Building\\CityBuildingManager.cs",
+              "RelativeToolTip": "Assets\\Acne\\Building\\CityBuildingManager.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwE8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:47:53.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AcneManager.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T06:55:41.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LabubuManager.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Labubu\\LabubuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Labubu\\LabubuManager.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\Labubu\\LabubuManager.cs",
+              "RelativeToolTip": "Assets\\Labubu\\LabubuManager.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T06:53:10.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CockroachLevelManager.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\CockroachLevel\\CockroachLevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\CockroachLevel\\CockroachLevelManager.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\CockroachLevel\\CockroachLevelManager.cs",
+              "RelativeToolTip": "Assets\\CockroachLevel\\CockroachLevelManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T03:36:43.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CockroachLevelManager.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T03:01:41.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WaterMelonLevelManager.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T02:41:43.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BoomWireManager.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\BoomWireManager.cs",
+              "RelativeDocumentMoniker": "Assets\\BomberWire\\BoomWireManager.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\BoomWireManager.cs",
+              "RelativeToolTip": "Assets\\BomberWire\\BoomWireManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T02:41:20.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PingPongMover.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\PingPongMover.cs",
+              "RelativeDocumentMoniker": "Assets\\BomberWire\\PingPongMover.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\PingPongMover.cs",
+              "RelativeToolTip": "Assets\\BomberWire\\PingPongMover.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAIwCIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T02:39:41.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "KinfeWaterMelonLevel.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T02:39:30.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Knift.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T02:36:40.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BombWire.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T02:02:25.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PingPongMover.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:43:26.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Knift.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\Knift.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\Knift.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\Knift.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\Knift.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T02:44:05.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LinecastCutter.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\SpriteCutter\\_Example\\LinecastCutter.cs",
+              "RelativeDocumentMoniker": "Assets\\SpriteCutter\\_Example\\LinecastCutter.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\SpriteCutter\\_Example\\LinecastCutter.cs",
+              "RelativeToolTip": "Assets\\SpriteCutter\\_Example\\LinecastCutter.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwDoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T02:38:39.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "KnifeThrowManager.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs",
+              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T02:26:24.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SpineAnimationController.cs",
+              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\SpineAnimationController.cs",
+              "RelativeDocumentMoniker": "Assets\\SpineAnimationController.cs",
+              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\SpineAnimationController.cs",
+              "RelativeToolTip": "Assets\\SpineAnimationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T07:34:32.054Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
