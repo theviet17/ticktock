@@ -1030,7 +1030,7 @@ MonoBehaviour:
   knifePosition: {fileID: 894733989}
   knife: {fileID: 894733989}
   circle: {fileID: 192322465}
-  rotationSpeed: 180
+  rotationSpeed: 140
   throwSpeed: 0.1
   knc: 0
   kvsk: {fileID: 1543133318}
@@ -1038,6 +1038,7 @@ MonoBehaviour:
   kvf: {fileID: 576609410}
   requset: 5
   count: 0
+  timer: 30
 --- !u!4 &510956117
 Transform:
   m_ObjectHideFlags: 0
