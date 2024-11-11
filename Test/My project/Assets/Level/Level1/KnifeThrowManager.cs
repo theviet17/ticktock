@@ -4,6 +4,7 @@ using DG.Tweening;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class KnifeThrowManager : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class KnifeThrowManager : MonoBehaviour
     public int requset = 5;
     public int count = 0;
 
+    public float timer = 15;
+    
+
     public void UnActive()
     {
         circleTween.Kill(); 
@@ -43,7 +47,7 @@ public class KnifeThrowManager : MonoBehaviour
         StartCoroutine(WaitEnd());
 
         UIManager.I.ShowRequest(true, "Radish request: " + requset, count.ToString());
-        UIManager.I.ShowTime(false, 0);
+        UIManager.I.ShowTime(true, (int)timer);
     }
     public void ChargeCount()
     {
@@ -73,16 +77,31 @@ public class KnifeThrowManager : MonoBehaviour
 
     void Update()
     {
-        // Nhấn chuột để ném dao
-        if (Input.GetMouseButtonDown(0) && knife != null && Active)
+        if (Active)
         {
-            if (!IsPointerOverButton())
+            timer -= Time.deltaTime;
+            UIManager.I.ChangeTime((int)timer);
+
+            if (Input.GetMouseButtonDown(0) && knife != null)
             {
-                ThrowKnife();
-                knife = null;
+                if (!IsPointerOverButton())
+                {
+                    ThrowKnife();
+                    knife = null;
+                }
+
             }
-           
+
+            if ( timer < 0)
+            {
+                Active = false;
+            }
         }
+
+       
+
+        // Nhấn chuột để ném dao
+       
     }
     IEnumerator WaitEnd()
     {

@@ -176,11 +176,21 @@ public class UIManager : MonoBehaviour
     }
     public void ChangeCount(string cot)
     {
-        count.text = cot;
+        try
+        {
+            count.text = cot;
+        }
+        catch { }
+       
     }
     public void ChangeTime(int time)
     {
-        Time.text = "Time: 00:" + (time < 10?"0"+ time : time);
+        try
+        {
+            Time.text = "Time: 00:" + (time < 10 ? "0" + time : time);
+        }
+        catch { }
+       
     }
     public static bool IsPointerOverButton(Vector3 pos)
     {

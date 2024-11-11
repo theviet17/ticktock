@@ -43,7 +43,7 @@ public class CuttingLevelManager : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
-
+        xTween.Kill();
         DOVirtual.DelayedCall(1.3f, () =>
         {
             if (cutter.Count >= request)
@@ -80,7 +80,7 @@ public class CuttingLevelManager : MonoBehaviour
                     KnifeMoveY();
                 }
             }
-            if ( timer < 0)
+            if (cutter.Count >= request || timer < 0)
             {
                 End = true;
             }
@@ -119,7 +119,7 @@ public class CuttingLevelManager : MonoBehaviour
     Tween xTween;
     void KnifeMoveX()
     {
-        knife.DOMoveX(targetx.position.x, xDuration).SetEase(Ease.Linear).OnComplete(() =>
+        xTween = knife.DOMoveX(targetx.position.x, xDuration).SetEase(Ease.Linear).OnComplete(() =>
         {
             if(cutter.Count >= request)
             {
@@ -174,8 +174,9 @@ public class CuttingLevelManager : MonoBehaviour
                 Vector2 forceDirection2 = new Vector2(1, 0.5f);
 
                 output.firstSideGameObject.transform.SetParent(null);
-
                 
+
+
                 cutter.Add(output.firstSideGameObject.transform);
                 UIManager.I.ChangeCount(cutter.Count.ToString());
                 count_Txt.text = cutter.Count.ToString();
@@ -197,9 +198,11 @@ public class CuttingLevelManager : MonoBehaviour
     public float cutterMoveX;
     void MoveCutter()
     {
+     
         for (int i = 0; i< cutter.Count; i++)
         {
             cutter[i].DOMoveX(cutter[i].position.x + cutterMoveX, yDuration);
+            cutter[i].GetComponent<Collider2D>().enabled = false;
         }
     }
 }

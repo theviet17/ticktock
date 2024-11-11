@@ -267,7 +267,7 @@ PrefabInstance:
       objectReference: {fileID: 1310607089}
     - target: {fileID: 1011227997706398621, guid: e5d1a0de0937ec24895bbdc1ccc4d81a, type: 3}
       propertyPath: xDuration
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1011227997706398621, guid: e5d1a0de0937ec24895bbdc1ccc4d81a, type: 3}
       propertyPath: yDuration
@@ -275,7 +275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1011227997706398621, guid: e5d1a0de0937ec24895bbdc1ccc4d81a, type: 3}
       propertyPath: cutterMoveX
-      value: -0.1
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 1011227997706398621, guid: e5d1a0de0937ec24895bbdc1ccc4d81a, type: 3}
       propertyPath: layer.m_Bits

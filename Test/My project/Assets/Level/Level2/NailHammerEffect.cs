@@ -107,7 +107,7 @@ public class NailHammerEffect : MonoBehaviour
     }
 
     Vector3 hammerHeightEuler = new Vector3(0, 0, -40);
-    Vector3 hammerLowEuler = new Vector3(0, 0, -13);
+    Vector3 hammerLowEuler = new Vector3(0, 0, -7.9f);
 
     Tween hammerTween;
     private void HammerHitAnimation()

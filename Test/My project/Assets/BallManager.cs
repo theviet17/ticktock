@@ -20,19 +20,19 @@ public class BallManager : MonoBehaviour
     public void Start()
     {
         var dd = new List<GameObject>(gameObjects);
-        GameObject go =  gameObjects[Random.Range(0, dd.Count)];
+        GameObject go = dd[Random.Range(0, dd.Count)];
         dd.Remove(go);
         go.transform.position = transforms[0].position;
         go.gameObject.SetActive(true);
         Debug.Log(go.name);
 
-        GameObject go2 = gameObjects[Random.Range(0, dd.Count)];
+        GameObject go2 = dd[Random.Range(0, dd.Count)];
         dd.Remove(go2);
         go2.transform.position = transforms[1].position;
         go2.gameObject.SetActive(true);
         Debug.Log(go2.name);
 
-        GameObject go3 = gameObjects[Random.Range(0, dd.Count)];
+        GameObject go3 = dd[Random.Range(0, dd.Count)];
         dd.Remove(go3);
         go3.transform.position = transforms[2].position;
         go3.gameObject.SetActive(true);
