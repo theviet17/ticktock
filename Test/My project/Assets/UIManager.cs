@@ -76,12 +76,34 @@ public class UIManager : MonoBehaviour
     [Header("Loading")]
     public CustomProgressBar loadingBar;
     public GameObject _loadingPanel;
+
+    private string policyKey = "policy";
     private void Start()
     {
         ShowOffPanelWhentStart();
-        LoadingScenes();
 
-        
+        var accepted = PlayerPrefs.GetInt(policyKey, 0) == 1;
+
+        if (accepted)
+        {
+            TermsOfServiceDialogClosed();
+            return;
+        }
+            
+
+        SimpleGDPR.ShowDialog(new TermsOfServiceDialog().
+                SetPrivacyPolicyLink("https://docs.google.com/document/d/13xYHRdlLqCkubRXIxgAKnqc0Eiq9_YA4XZvkQ0IGEsI/edit?usp=sharing"),
+                TermsOfServiceDialogClosed);
+
+       
+
+     
+    }
+    private void TermsOfServiceDialogClosed()
+    {
+        PlayerPrefs.SetInt(policyKey, 1);
+        loadingBar.gameObject.SetActive(true);
+        LoadingScenes();
     }
     void LoadingScenes()
     {
@@ -139,6 +161,7 @@ public class UIManager : MonoBehaviour
     public void ShowOffPanelWhentStart()
     {
         _loadingPanel.gameObject.SetActive(true);
+        loadingBar.gameObject.SetActive(false);
         _homePanel.gameObject.SetActive(false);
         _settingPanel.gameObject.SetActive(false);
         _ingamePanel.gameObject.SetActive(false);
