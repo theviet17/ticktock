@@ -17,10 +17,26 @@ public class PhichDien : MonoBehaviour
     // Cờ để kiểm tra nếu đang kéo
     private bool isDragging = false;
 
+    public bool daCam;
+
     public ElectricWireManager wireManager;
+
+    public Camera main;
+    public bool islargePichDien;
+
+    GameObject connectTedODien;
+    public LineRenderer conChuot;
+    public SpriteRenderer conChuotSprite;
+    public SpriteRenderer daucam;
+    public GameObject chuotDen;
+    public AudioSource sound;
     private void Update()
     {
-  
+        conChuot.positionCount = 2;
+        conChuot.SetPosition(0, conChuot.transform.position - new Vector3(0,0.7f,0));
+        conChuot.SetPosition(1 , gameObject.transform.position);
+
+
         if (isDragging)
         {
   
@@ -52,19 +68,47 @@ public class PhichDien : MonoBehaviour
 
             if (nearestDistance <= snapDistance)
             {
-                if( !wireManager.CheckODien(nearestTarget))
+                if( !wireManager.CheckODien(nearestTarget, islargePichDien))
                 { 
+
                     transform.DOMove(nearestTarget.transform.position, moveDuration).SetEase(Ease.OutQuad);
-                    wireManager.ChargeOdien(nearestTarget);
+                    daucam.gameObject.SetActive(false);
+                    conChuotSprite.sortingOrder = 2;
+
+                    daCam = true;
+                    chuotDen.gameObject.SetActive(true);
+                    if (Setting.SoundCheck())
+                    {
+                        sound.Play();
+                    }
+                    connectTedODien = nearestTarget;
+                    wireManager.ChargeOdien(nearestTarget ,  islargePichDien);
                 }
                
             }
+            wireManager.CheckDOne();
         }
     }
 
     private void OnMouseDown()
     {
+        if (!wireManager.End)
+        {
+            isDragging = true;
+            conChuotSprite.sortingOrder = 3;
 
-        isDragging = true;
+            daCam = false;
+            chuotDen.gameObject.SetActive(false);
+            sound.Stop();
+
+            daucam.gameObject.SetActive(true);
+
+            if (connectTedODien != null)
+            {
+                wireManager.DisChargeOdien(connectTedODien, islargePichDien);
+                connectTedODien = null;
+            }
+        }
+       
     }
 }

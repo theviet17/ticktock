@@ -58,13 +58,13 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\ScriptingDefineUtility.cs" />
-    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\EditorGUIEvents.cs" />
-    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\FindDerivedClasses.cs" />
-    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\Toolbar.cs" />
     <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\WelcomeWindow.cs" />
-    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\ModuleInstaller.cs" />
+    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\Toolbar.cs" />
+    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\EditorGUIEvents.cs" />
     <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\ResourceUtility.cs" />
+    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\ModuleInstaller.cs" />
+    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\FindDerivedClasses.cs" />
+    <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\ScriptingDefineUtility.cs" />
     <Compile Include="Assets\Plugins\Dreamteck\Utilities\Editor\DreamteckEditorGUI.cs" />
   </ItemGroup>
   <ItemGroup>

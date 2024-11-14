@@ -1,10 +1,13 @@
 ﻿using DG.Tweening;
+using Dreamteck.Splines;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
 public class SpritePixelColorChecker : MonoBehaviour
@@ -16,106 +19,181 @@ public class SpritePixelColorChecker : MonoBehaviour
     public GameObject pixelgreen;
     public GameObject pixelred;
 
-    float timer;
+    
     private Camera mainCamera;
     private Vector3 offset;
     public GameObject kim;
     public Transform daukim;
 
     public Transform diemParent;
+    public float drawTime;
 
+    public int errorPointMax = 0;
+    public float timer;
     bool Win;
     bool End;
 
+    private void Start()
+    {
+        UIManager.I.ShowTime(true, (int)timer);
+
+        StartCoroutine(WaitEnd());
+    }
+    IEnumerator WaitEnd()
+    {
+        yield return new WaitUntil(() => End);
+
+        DOVirtual.DelayedCall(1.3f, () =>
+        {
+            if (Win)
+            {
+                diemParent.gameObject.SetActive(false);
+                kim.gameObject.SetActive(false);    
+                spriteRenderer.transform.DOScale(Vector3.one * 2.2f, 1).SetEase(Ease.InQuad).OnComplete(() =>
+                {
+                    DOVirtual.DelayedCall(0.5f, () =>
+                    {
+                        UIManager.I.endGameLoad.Win();
+                    });
+                    
+                });
+               
+            }
+            else
+            {
+                UIManager.I.endGameLoad.Lose();
+            }
+
+        });
+
+    }
+
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        drawTime += Time.deltaTime;
+        if (Input.GetMouseButtonDown(0) && !IsPointerOverButton())
         {
             isDragging = true;
             offset = kim.transform.position - GetMouseWorldPosition();
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && isDragging)
         {
             isDragging = false;
         }
-        timer += Time.deltaTime;
-        if (isDragging)
+        if (!End)
         {
-            kim.transform.position = GetMouseWorldPosition() + offset;
-
-            CheckColider();
-            // Lấy vị trí chuột trong không gian thế giới
-            Vector2 mouseWorldPosition = daukim.position;//cam.ScreenToWorldPoint(Input.mousePosition);
-
-            // Kiểm tra xem chuột có nằm trong sprite không
-            if (spriteRenderer.bounds.Contains(mouseWorldPosition))
+            timer -= Time.deltaTime;
+            UIManager.I.ChangeTime((int)timer);
+            if (isDragging)
             {
-                // Lấy texture của sprite
-                Texture2D texture = spriteRenderer.sprite.texture;
+                kim.transform.position = GetMouseWorldPosition() + offset;
 
-                // Chuyển đổi vị trí chuột từ không gian thế giới sang không gian của sprite
-                Vector2 localPosition = (Vector2)mouseWorldPosition - (Vector2)spriteRenderer.transform.position;
+                CheckColider();
+                // Lấy vị trí chuột trong không gian thế giới
+                Vector2 mouseWorldPosition = daukim.position;//cam.ScreenToWorldPoint(Input.mousePosition);
 
-                // Tính toán lại localPosition dựa trên scale của sprite
-                Vector2 scaledLocalPosition = new Vector2(
-                    localPosition.x / spriteRenderer.transform.lossyScale.x,
-                    localPosition.y / spriteRenderer.transform.lossyScale.y
-                );
-
-                // Tính vị trí pixel trong texture dựa vào tỷ lệ và pivot của sprite
-                Vector2 pivot = spriteRenderer.sprite.pivot;
-                Vector2 spriteSize = spriteRenderer.sprite.rect.size;
-
-                int pixelX = Mathf.FloorToInt((scaledLocalPosition.x * spriteRenderer.sprite.pixelsPerUnit + pivot.x) * (texture.width / spriteSize.x));
-                int pixelY = Mathf.FloorToInt((scaledLocalPosition.y * spriteRenderer.sprite.pixelsPerUnit + pivot.y) * (texture.height / spriteSize.y));
-
-
-                // Đảm bảo tọa độ pixel nằm trong phạm vi của texture
-                if (pixelX >= 0 && pixelX < texture.width && pixelY >= 0 && pixelY < texture.height)
+                // Kiểm tra xem chuột có nằm trong sprite không
+                if (spriteRenderer.bounds.Contains(mouseWorldPosition))
                 {
-                    // Lấy màu của pixel
-                    Color pixelColor = texture.GetPixel(pixelX, pixelY);
+                    // Lấy texture của sprite
+                    Texture2D texture = spriteRenderer.sprite.texture;
 
-                    // Kiểm tra màu pixel với targetColor
-                    if (IsColorSimilar(pixelColor, targetColor, 0.2f))//(pixelColor == targetColor)
-                    {
-                        if (timer > 0.1f)
-                        {
-                            var pixel = Instantiate(pixelgreen, mouseWorldPosition, Quaternion.identity);
-                            pixel.transform.SetParent(diemParent);
-                            timer = 0;
-                        }
+                    // Chuyển đổi vị trí chuột từ không gian thế giới sang không gian của sprite
+                    Vector2 localPosition = (Vector2)mouseWorldPosition - (Vector2)spriteRenderer.transform.position;
 
-                        Debug.Log("Pixel có màu mong muốn!");
-                    }
-                    else
+                    // Tính toán lại localPosition dựa trên scale của sprite
+                    Vector2 scaledLocalPosition = new Vector2(
+                        localPosition.x / spriteRenderer.transform.lossyScale.x,
+                        localPosition.y / spriteRenderer.transform.lossyScale.y
+                    );
+
+                    // Tính vị trí pixel trong texture dựa vào tỷ lệ và pivot của sprite
+                    Vector2 pivot = spriteRenderer.sprite.pivot;
+                    Vector2 spriteSize = spriteRenderer.sprite.rect.size;
+
+                    int pixelX = Mathf.FloorToInt((scaledLocalPosition.x * spriteRenderer.sprite.pixelsPerUnit + pivot.x) * (texture.width / spriteSize.x));
+                    int pixelY = Mathf.FloorToInt((scaledLocalPosition.y * spriteRenderer.sprite.pixelsPerUnit + pivot.y) * (texture.height / spriteSize.y));
+
+
+                    // Đảm bảo tọa độ pixel nằm trong phạm vi của texture
+                    if (pixelX >= 0 && pixelX < texture.width && pixelY >= 0 && pixelY < texture.height)
                     {
-                        if (timer > 0.1f)
+                        // Lấy màu của pixel
+                        Color pixelColor = texture.GetPixel(pixelX, pixelY);
+
+                        // Kiểm tra màu pixel với targetColor
+                        if (IsColorSimilar(pixelColor, targetColor, 0.2f))//(pixelColor == targetColor)
                         {
-                            VeraNgoai();
-                            var pixel = Instantiate(pixelred, mouseWorldPosition, Quaternion.identity);
-                            pixel.transform.SetParent(diemParent);
-                            timer = 0;
+                            if (drawTime > 0.1f)
+                            {
+                                var pixel = Instantiate(pixelgreen, mouseWorldPosition, Quaternion.identity);
+                                pixel.transform.SetParent(diemParent);
+                                drawTime = 0;
+                            }
+
+                            Debug.Log("Pixel có màu mong muốn!");
                         }
-                        
-                        Debug.Log("Pixel không có màu mong muốn.");
+                        else
+                        {
+                            if (drawTime > 0.1f)
+                            {
+                                VeraNgoai();
+                                var pixel = Instantiate(pixelred, mouseWorldPosition, Quaternion.identity);
+                                pixel.transform.SetParent(diemParent);
+                                drawTime = 0;
+                            }
+
+                            Debug.Log("Pixel không có màu mong muốn.");
+                        }
                     }
                 }
-            }
-            else
-            {
-                if (timer > 0.1f)
+                else
                 {
-                    VeraNgoai();
-                    var pixel = Instantiate(pixelred, mouseWorldPosition, Quaternion.identity);
-                    pixel.transform.SetParent(diemParent);
-                    timer = 0;
-                }
+                    if (drawTime > 0.1f)
+                    {
+                        VeraNgoai();
+                        var pixel = Instantiate(pixelred, mouseWorldPosition, Quaternion.identity);
+                        pixel.transform.SetParent(diemParent);
+                        drawTime = 0;
+                    }
 
+                }
             }
         }
+
+        if (timer < 0)
+        {
+            End = true;
+        }
+       
         // Kiểm tra nếu người dùng click chuột trái
 
+    }
+    private bool IsPointerOverButton()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                PointerEventData pointerData = new PointerEventData(EventSystem.current)
+                {
+                    position = touch.position
+                };
+
+                var results = new System.Collections.Generic.List<RaycastResult>();
+                EventSystem.current.RaycastAll(pointerData, results);
+
+                foreach (RaycastResult result in results)
+                {
+                    if (result.gameObject.CompareTag("CanClick") == false)
+                    {
+                        return true; // Có button dưới ngón tay
+                    }
+                }
+            }
+        }
+        return false; // Không có button dưới ngón tay
     }
     private Vector3 GetMouseWorldPosition()
     {
@@ -137,6 +215,8 @@ public class SpritePixelColorChecker : MonoBehaviour
     public List<Diem> diems;
     public LayerMask layer;
     public int Complete = 0;
+
+    public AudioSource tackeo;
     void CheckColider()
     {
         
@@ -160,10 +240,16 @@ public class SpritePixelColorChecker : MonoBehaviour
                 if (CompleteAllPointInDiem(diemFound))
                 {
                     diemFound.GoGo();
+                    if (Setting.SoundCheck())
+                    {
+                        tackeo.Play();
+                    }
+                    UIManager.I.Haptic();
                     diems.Remove(diemFound);
                     if(diems.Count <= 0)
                     {
                         Win = true;
+                        End = true;
                     }
                 }
             }
@@ -182,7 +268,20 @@ public class SpritePixelColorChecker : MonoBehaviour
 
     void VeraNgoai()
     {
-        End = true;
+       
+        errorPointMax++;
+        if(errorPointMax > 3)
+        {
+            End = true;
+            if (Setting.SoundCheck())
+            {
+                AudioSource audioSource = UIManager.I.sourcePool.GetSoundFromPool().GetComponent<AudioSource>();
+                audioSource.gameObject.SetActive(true);
+                audioSource.clip = UIManager.I.wrong;
+                audioSource.Play();
+            }
+            UIManager.I.Haptic();
+        }
 
     }
 }

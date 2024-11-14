@@ -2,6 +2,7 @@
 using DG.Tweening;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using UnityEngine.EventSystems;
 
 public class BallController : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class BallController : MonoBehaviour
 
     public float timerTick = 0;
     public float duration = 2;
+
+    public bool End =false;
+
+    
 
     public bool pass = false;
     void Start()
@@ -46,20 +51,51 @@ public class BallController : MonoBehaviour
 
         // Di chuyển quả bóng theo trục Z
         transform.Translate(Vector3.forward * setMoveSpeed * Time.deltaTime);
-
-        // Kiểm tra sự kiện nhấp chuột
-        if (Input.GetMouseButtonDown(0))
-        {
-            DisableGravity();
-            Jump();
-        }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            EnableGravity();
-        }
-        //CheckRaycast();
-
         UpdateCamPos();
+        if (!End)
+        {
+            // Kiểm tra sự kiện nhấp chuột
+            if (Input.GetMouseButtonDown(0) && !IsPointerOverButton())
+            {
+                UIManager.I.Haptic();
+                DisableGravity();
+                Jump();
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                EnableGravity();
+            }
+            //CheckRaycast();
+
+           
+        }
+       
+    }
+    private bool IsPointerOverButton()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                PointerEventData pointerData = new PointerEventData(EventSystem.current)
+                {
+                    position = touch.position
+                };
+
+                var results = new System.Collections.Generic.List<RaycastResult>();
+                EventSystem.current.RaycastAll(pointerData, results);
+
+                foreach (RaycastResult result in results)
+                {
+                    if (result.gameObject.CompareTag("CanClick") == false)
+                    {
+                        return true; // Có button dưới ngón tay
+                    }
+                }
+            }
+        }
+        return false; // Không có button dưới ngón tay
     }
 
 
@@ -118,6 +154,7 @@ public class BallController : MonoBehaviour
             {
                 setMoveSpeed = moveSpeed;
             });
+            UIManager.I.Haptic();
         }
         else if (other.gameObject.tag == "Hole" && !pass)
         {
@@ -132,16 +169,7 @@ public class BallController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Wall")
-        {
-            setMoveSpeed = 0;
-            var z = transform.position - Vector3.forward;
-            transform.DOMoveZ(z.z, 0.4f).SetEase(Ease.OutQuad).OnComplete(() =>
-            {
-                setMoveSpeed = moveSpeed;
-            });
-        }
-        else if (collision.gameObject.tag == "Hole" && !pass)
+       if (collision.gameObject.tag == "Hole" && !pass)
         {
             Debug.LogWarning("Hole");
             pass = true;

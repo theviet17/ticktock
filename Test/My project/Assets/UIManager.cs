@@ -321,6 +321,12 @@ public class UIManager : MonoBehaviour
             OpenIngamePanel(true);
             ChangeMusic(in_music);
 
+            if (PlayerPrefs.GetInt(CurrentLevelID) == 12)
+            {
+                TurnOnMusic(false);
+            }
+          
+
             DOVirtual.DelayedCall(0.5f, () =>
             {
                 buttonActive.Active();
@@ -370,7 +376,7 @@ public class UIManager : MonoBehaviour
     {
         int currentLevel = PlayerPrefs.GetInt(CurrentLevelID);
         currentLevel++;
-        if (currentLevel > 9)
+        if (currentLevel > 19)
         {
             currentLevel = 0;
         }
@@ -381,6 +387,13 @@ public class UIManager : MonoBehaviour
     {
         bg_Ingame.gameObject.SetActive(true);
         int currentLevel = PlayerPrefs.GetInt(CurrentLevelID);
+
+        if (PlayerPrefs.GetInt(CurrentLevelID) == 12)
+        {
+            TurnOnMusic(false);
+        }
+
+
         string sceneName = (currentLevel + 1).ToString();
         level.GetComponentInChildren<TMP_Text>().text ="Level " + sceneName;
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);

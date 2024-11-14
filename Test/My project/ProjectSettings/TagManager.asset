@@ -9,6 +9,7 @@ TagManager:
   - Hole
   - Wall
   - CanClick
+  - camphu
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - UI
   - CutterObject
   - Effect
-  - 
-  - 
+  - Ball
+  - BG
   - 
   - 
   - 
