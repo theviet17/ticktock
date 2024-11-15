@@ -54,7 +54,7 @@ public class WaterMelonLevelManager : MonoBehaviour
         {
             huongDan.gameObject.SetActive(false);
             kinfe.MoveTotarget();
-            DOVirtual.DelayedCall(0.1f, () =>
+            DOVirtual.DelayedCall(0.2f, () =>
             {
                 if (Setting.SoundCheck())
                 {

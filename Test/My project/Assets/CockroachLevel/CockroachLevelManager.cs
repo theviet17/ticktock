@@ -1,4 +1,4 @@
-using DG.Tweening;
+﻿using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +10,10 @@ public class CockroachLevelManager : PingPongMover
     public Transform sprayTarget;
     public float duration = 1;
     public AudioSource xitgian;
-    public SpriteRenderer fx;
+    public AudioSource gianchet;
+    public Animator fx;
     bool Win =false;
+    public Rigidbody2D cockroach;
     void Start()
     {
         StartPingPongMovement();
@@ -51,7 +53,7 @@ public class CockroachLevelManager : PingPongMover
 
         if (Win)
         {
-            DOVirtual.DelayedCall(2.3f, () =>
+            DOVirtual.DelayedCall(4.5f, () =>
             {
                 UIManager.I.endGameLoad.Win();
 
@@ -75,11 +77,27 @@ public class CockroachLevelManager : PingPongMover
     {
         spray.transform.DOMove(sprayTarget.position, duration).SetEase(Ease.OutQuad).OnComplete(() =>
         {
-            UIAnimation.Fade(fx, 0.2f,true, 0.7f);
+            //UIAnimation.Fade(fx, 0.2f,true, 0.7f);
+            fx.gameObject.SetActive(true);
+            fx.SetTrigger("action");
             if (Setting.SoundCheck())
             {
                 xitgian.Play();
             }
+            DOVirtual.DelayedCall(0.7f, () =>
+            {
+                cockroach.gravityScale = 2;
+                gianchet.Play();
+                Vector3 randomRotation = new Vector3(0,0, Random.Range(0f, 360f));
+
+                float duration = 1.3f; // Thời gian xoay
+                cockroach.transform.DORotate(randomRotation, duration, RotateMode.FastBeyond360)
+                    .SetEase(Ease.InOutQuad);
+                DOVirtual.DelayedCall(1.3f, () =>
+                {
+                    UIAnimation.Fade(cockroach.GetComponent<SpriteRenderer>(), 0.5f, false, 1f);
+                });
+            });
         });
         
         spray.transform.DORotate(sprayTarget.eulerAngles  , duration).SetEase(Ease.OutQuad);

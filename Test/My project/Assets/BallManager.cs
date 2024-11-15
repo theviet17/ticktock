@@ -18,8 +18,8 @@ public class BallManager : MonoBehaviour
     public GameObject Do;
     public GameObject zone;
 
-    public List<int> tall;
-    public int current;
+    public List<float> tall;
+    public float current;
 
     public float timer = 30;
     bool End = false;
@@ -35,7 +35,7 @@ public class BallManager : MonoBehaviour
         go.gameObject.SetActive(true);
         Debug.Log(go.name);
 
-        tall.Add(gameObjects.IndexOf(go) + 1);
+        tall.Add( (gameObjects.IndexOf(go) + 1) *0.7f);
         current = tall[0];
         UpdateSafeZone();
 
@@ -44,14 +44,14 @@ public class BallManager : MonoBehaviour
         go2.transform.position = transforms[1].position;
         go2.gameObject.SetActive(true);
         Debug.Log(go2.name);
-        tall.Add(gameObjects.IndexOf(go2) + 1);
+        tall.Add((gameObjects.IndexOf(go2) + 1)*0.7f);
 
         GameObject go3 = dd[Random.Range(0, dd.Count)];
         dd.Remove(go3);
         go3.transform.position = transforms[2].position;
         go3.gameObject.SetActive(true);
         Debug.Log(go3.name);
-        tall.Add(gameObjects.IndexOf(go3) + 1);
+        tall.Add((gameObjects.IndexOf(go3) + 1)*0.7f);
 
         UIManager.I.ShowTime(true, (int)timer);
 
@@ -122,8 +122,8 @@ public class BallManager : MonoBehaviour
     {
         balll.pass = false;
         float y = current;
-        y = Mathf.Clamp(y, 0f, 8f);
-        float tyle = y / 8f;
+        y = Mathf.Clamp(y, 0f, 8*0.7f);
+        float tyle = y / 8 * 0.7f;
         Vector3 newPos = Vector3.Lerp(point1.transform.position, point2.transform.position, tyle);
         newPos.x = zone.transform.position.x;
         zone.transform.position = newPos;
@@ -132,8 +132,8 @@ public class BallManager : MonoBehaviour
     public void FixedUpdate()
     {
         float y = balll.transform.position.y;
-        y = Mathf.Clamp(y , 0f, 8f);
-        float tyle = y / 8f;
+        y = Mathf.Clamp(y , 0f, 8 * 0.7f);
+        float tyle = y / 8 * 0.7f;
         Do.transform.position = Vector3.Lerp(point1.transform.position, point2.transform.position, tyle);
 
 }

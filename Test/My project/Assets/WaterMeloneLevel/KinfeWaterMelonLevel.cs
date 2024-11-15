@@ -14,13 +14,15 @@ public class KinfeWaterMelonLevel : PingPongMover
 
     public Rigidbody2D nua2;
     public Transform nua2Target;
-
+    public Animator fx;
     public void MoveTotarget()
     {
         move.DOMoveY(targetY, 0.3f).OnComplete(() =>
         {
             ChiaNua();
+            //DOVirtual.DelayedCall(0.1f, () => );
         });
+        DOVirtual.DelayedCall(0.05f, () => fx.SetTrigger("nuocdua"));
     }
 
     public void ChiaNua()

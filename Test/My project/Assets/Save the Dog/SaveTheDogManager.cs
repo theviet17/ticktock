@@ -51,9 +51,9 @@ public class SaveTheDogManager : PingPongMover
             xitNuoc.Play();
         }
         spray.AnimationState.SetAnimation(0, "spray", false);
-        DOVirtual.DelayedCall(0.5f, () =>
+        DOVirtual.DelayedCall(0.6f, () =>
         {
-            fire.GetComponent<SpriteRenderer>().enabled = false;
+            fire.gameObject.SetActive(false);
         });
     }
     [Header("Fire extinguisher")]

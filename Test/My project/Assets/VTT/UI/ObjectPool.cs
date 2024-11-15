@@ -15,6 +15,7 @@ public class ObjectPool : MonoBehaviour
         for (int i = 0; i < poolCount; i++)
         {
             GameObject clone = Instantiate(main);
+            clone.transform.position = main.transform.position;
             clone.transform.parent = transform;
             pool.Add(clone);
             clone.gameObject.SetActive(false);
@@ -35,6 +36,7 @@ public class ObjectPool : MonoBehaviour
         }
         GameObject clone = Instantiate(main);
         clone.transform.parent = transform;
+        clone.transform.position = main.transform.position;
         pool.Add(clone);
         clone.gameObject.SetActive(false);
         return clone;

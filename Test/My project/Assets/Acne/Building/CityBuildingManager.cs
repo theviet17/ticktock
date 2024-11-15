@@ -5,6 +5,7 @@ using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Pool;
 
 public class CityBuildingManager : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class CityBuildingManager : MonoBehaviour
     public GameObject winZone;
     public Transform winZoneLimit1;
     public Transform winZoneLimit2;
+
+    public GameObject loseZone;
+    public Transform loseZoneLimit1;
+    public Transform loseZoneLimit2;
 
     public GameObject winZone2;
     public List<Sprite> alls;
@@ -55,7 +60,7 @@ public class CityBuildingManager : MonoBehaviour
     {
         yield return new WaitUntil(() => End);
 
-        DOVirtual.DelayedCall(1.5f, () =>
+        DOVirtual.DelayedCall(2f, () =>
         {
             if (Win)
             {
@@ -109,38 +114,156 @@ public class CityBuildingManager : MonoBehaviour
         {
             timer -= Time.deltaTime;
             UIManager.I.ChangeTime((int)timer);
+            bool perfected =false;
             if (Input.GetMouseButtonDown(0) && !IsPointerOverButton() && timer >= 0)
             {
                 if (CheckWinZone(move.transform))
                 {
                     sound = perfect;
+                    perfected = true;
                 }
                 else
                 {
                     sound = drop;
                 }
-
                 moveTween.Kill();
                 move.GetComponent<Rigidbody2D>().gravityScale = 1;
                 GameObject temp = move.transform.GetChild(0).gameObject;
                 temp.transform.SetParent(null);
-                count++;
-                float timeDelay = count < requset ? 0.9f : 1.5f;
-                DOVirtual.DelayedCall(timeDelay, () =>
+                
+                if (CheckLoseZone(move.transform) && count>0)
+                {
+                    DOVirtual.DelayedCall(1, () =>
+                    {
+                        End = true;
+                    });
+                }
+                else
+                {
+                    CheckBuildingCrash(temp, perfected);
+                }
+
+               
+            }
+            if (!CheckWinOrLose())
+            {
+                End = true;
+            }
+        }
+
+        if ( timer < 0)
+        {
+            End = true;
+        }
+        
+    }
+    void CheckBuildingCrash(GameObject cau, bool perfected)
+    {
+        count++;
+        float timeDelay = count < requset ? 0.9f : 1.5f;
+        Transform raycast = move.transform.GetChild(move.transform.childCount - 1);
+        StartCoroutine(BuildingCrash(raycast, cau , perfected));
+        //DOVirtual.DelayedCall(timeDelay, () =>
+        //{
+        //    if (Setting.SoundCheck())
+        //    {
+        //        sound.Play();
+        //    }
+        //    UIManager.I.Haptic();
+
+        //    Destroy(cau);
+
+        //    Builder.Add(move);
+        //    winZone.transform.DOMoveX(move.transform.position.x, 0);
+        //    winZone2.transform.DOMoveX(move.transform.position.x, 0);
+        //    loseZone.transform.DOMoveX(move.transform.position.x, 0);
+        //    DisableGravity();
+        //    MovementObject();
+
+        //    UIManager.I.ChangeCount(Builder.Count.ToString());
+
+        //    if (Builder.Count >= requset)
+        //    {
+        //        End = true;
+        //        Win = true;
+
+        //        for (int i = 0; i < Builder.Count; i++)
+        //        {
+        //            Destroy(Builder[i].GetComponent<Rigidbody2D>());
+        //        }
+        //    }
+        //    else
+        //    {
+        //        DOVirtual.DelayedCall(0.5f, () =>
+        //        {
+        //            BlockStarting();
+        //        });
+        //    }
+
+        //});
+    }
+    public ObjectPool Pool_perfect;
+    public ObjectPool Pool_vacham;
+    IEnumerator BuildingCrash(Transform raycastPoint ,GameObject cau, bool perfected)
+    {
+        bool check = false;
+        while (!check)
+        {
+            Debug.Log("Raycast trúng: " + "0");
+            yield return new WaitForSeconds(Time.fixedDeltaTime);
+            
+            origin = raycastPoint;
+            Vector2 direction = Vector2.down;
+
+            RaycastHit2D hit = Physics2D.Raycast(origin.position, direction, 0.01f);
+
+            // Kiểm tra nếu ray trúng một vật thể
+            if (hit.collider != null && hit.collider.transform != raycastPoint.parent)
+            {
+                check = true;
+                Debug.Log("Raycast trúng: " + hit.collider.name);
+                if(hit.collider.name == "Quad" && Builder.Count != 0)
+                {
+                    End = true;
+                    
+                }
+                else
                 {
                     if (Setting.SoundCheck())
                     {
                         sound.Play();
                     }
+                    if (perfected)
+                    {
+                        Animator fx_perfect = Pool_perfect.GetObjectFromPool().GetComponent<Animator>();
+
+                        fx_perfect.gameObject.SetActive(true);
+                        fx_perfect.SetTrigger("perfect");
+                        
+                        DOVirtual.DelayedCall(0.7f, () => Pool_perfect.ReturnObjectToPool(fx_perfect.gameObject));
+
+                        fx_perfect.gameObject.transform.position = origin.position + new Vector3(-2,2,0);
+                    }
+                    Animator fx = Pool_vacham.GetObjectFromPool().GetComponent<Animator>();
+
+                    fx.gameObject.SetActive(true);
+                    fx.SetTrigger("vacham");
+                    DOVirtual.DelayedCall(0.7f, () => Pool_vacham.ReturnObjectToPool(fx.gameObject));
+
+                    fx.gameObject.transform.position = origin.position;
+
+
                     UIManager.I.Haptic();
 
-                    Destroy(temp);
+                    Destroy(cau);
+
                     Builder.Add(move);
                     winZone.transform.DOMoveX(move.transform.position.x, 0);
                     winZone2.transform.DOMoveX(move.transform.position.x, 0);
+                    loseZone.transform.DOMoveX(move.transform.position.x, 0);
                     DisableGravity();
                     MovementObject();
-                   
+
                     UIManager.I.ChangeCount(Builder.Count.ToString());
 
                     if (Builder.Count >= requset)
@@ -160,21 +283,26 @@ public class CityBuildingManager : MonoBehaviour
                             BlockStarting();
                         });
                     }
-
-                });
-            }
-            if (!CheckWinOrLose())
-            {
-                End = true;
+                }
+               
+                
             }
         }
-
-        if ( timer < 0)
-        {
-            End = true;
-        }
-        
     }
+    public Transform origin;
+    //private void OnDrawGizmos()
+    //{
+    //    Vector2 originPos = new Vector2(origin.position.x, origin.position.y);
+
+    //    // Hướng ngược trục Y
+    //    Vector2 direction = Vector2.down;
+
+    //    // Màu ray
+    //    Gizmos.color = Color.blue;
+
+    //    // Vẽ ray
+    //    Gizmos.DrawLine(originPos, originPos + direction * 0.5f);
+    //}
     private bool IsPointerOverButton()
     {
         if (Input.touchCount > 0)
@@ -205,10 +333,24 @@ public class CityBuildingManager : MonoBehaviour
     {
         moveTween.Kill();
         //move.position = new Vector3(startPoint.position.x, move.position.y, move.position.z);
+     
         moveTween = move.DOMoveX(x, moveDuration)
         .SetEase(Ease.InOutSine)
-        .SetLoops(-1, LoopType.Yoyo);
-
+        .SetLoops(-1, LoopType.Yoyo).OnStepComplete(() =>
+        {
+            if (winZoneLimit1 == winZone2.transform.GetChild(0))
+            {
+                winZoneLimit1 = winZone.transform.GetChild(0);
+                winZoneLimit2 = winZone.transform.GetChild(1);
+            }
+            else
+            {
+                winZoneLimit1 = winZone2.transform.GetChild(0);
+                winZoneLimit2 = winZone2.transform.GetChild(1);
+            }
+            //winZoneLimit1 = winZone2.transform.GetChild(0);
+            //winZoneLimit2 = winZone2.transform.GetChild(1);
+        });
     }
     public List<GameObject> moves;
     public void MovementObject()
@@ -244,11 +386,31 @@ public class CityBuildingManager : MonoBehaviour
 
         float xMin = Mathf.Min(winZoneLimit1.position.x, winZoneLimit2.position.x);
         float xMax = Mathf.Max(winZoneLimit1.position.x, winZoneLimit2.position.x);
+        move.transform.GetChild(1).gameObject.SetActive(false);
 
         if (move.position.x >= xMin && move.position.x <= xMax)
         {
             Debug.LogWarning("true");
             move.DOMoveX(winZone.transform.position.x, 0.5f);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+    public bool CheckLoseZone(Transform move)
+    {
+        Debug.LogWarning("Check");
+
+        float xMin = Mathf.Min(loseZoneLimit1.position.x, loseZoneLimit2.position.x);
+        float xMax = Mathf.Max(loseZoneLimit1.position.x, loseZoneLimit2.position.x);
+        //move.transform.GetChild(1).gameObject.SetActive(false);
+
+        if (move.position.x < xMin || move.position.x > xMax)
+        {
+            Debug.LogWarning("Drop");
             return true;
         }
         else
