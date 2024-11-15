@@ -10,6 +10,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using MoreMountains.NiceVibrations;
 
+
 [Serializable]
 public enum GameStatus
 {
@@ -36,7 +37,7 @@ public class UIManager : MonoBehaviour
             return instance;
         }
     }
-
+    public float LoadingTime;
     private void Awake()
     {
 
@@ -109,7 +110,7 @@ public class UIManager : MonoBehaviour
     {
         float myValue = 0f;
         buttonActive.DeActive();
-        DOTween.To(() => myValue, x => myValue = x, 1f, 6f).SetEase(Ease.OutQuad)
+        DOTween.To(() => myValue, x => myValue = x, 1f, LoadingTime).SetEase(Ease.OutQuad)
             .OnUpdate(() =>
             {
                 loadingBar.Value = myValue;
@@ -177,7 +178,6 @@ public class UIManager : MonoBehaviour
     public TMP_Text request;
     public TMP_Text count;
     public TMP_Text Time;
-    public GameObject bg_Ingame;
     public GameObject _ingamePanel;
     public Button setting_Button_InGame;
     public Button home_Button;
@@ -250,12 +250,19 @@ public class UIManager : MonoBehaviour
 
         UIAnimation.HorizontalTween(setting_Button_InGame.gameObject, 0.5f, open);
         UIAnimation.HorizontalTween(home_Button.gameObject, 0.5f, open);
-        UIAnimation.HorizontalTween(openCam.gameObject, 0.5f, open);
+        
         UIAnimation.VerticalTween(level, 0.5f, open, _camera, UIAnimation.Direction.top,0, -139.9f);
         UIAnimation.VerticalTween(tempPlace, 0.5f, open, _camera, UIAnimation.Direction.top, 0, -307.6f);
-        UIAnimation.Fade(manche, 1f, !open,1);
+        if(open)
+        {
+            UIAnimation.Fade(manche, 1f, !open, 1);
+        }
+       
 
-
+        if (!isOpenCam)
+        {
+            UIAnimation.HorizontalTween(openCam.gameObject, 0.5f, open);
+        }
         if (open)
         {
             LoadLevel();
@@ -265,7 +272,7 @@ public class UIManager : MonoBehaviour
     }
     void ButtonListener()
     {
-        playButton.onClick.AddListener(LoadSceme);
+        playButton.onClick.AddListener(LoadScene);
 
         openCam.onClick.AddListener(SetUP);
         switchCam.onClick.AddListener(SwitchCamera);
@@ -279,46 +286,54 @@ public class UIManager : MonoBehaviour
         buttonActive.DeActive();
         if (isOpenCam)
         {
-            OpenCamPanel(false);
-            DOVirtual.DelayedCall(1f, () =>
-            {
-                OpenIngamePanel(false);
-                DOVirtual.DelayedCall(0.7f, () =>
-                {
-                    ChangeMusic(bg_music);
-                    UnLoadScene();
-                    ShowOffHomePanel(true);
-                });
-            });
-            DOVirtual.DelayedCall(2.2f, () =>
-            {
-                buttonActive.Active();
-            });
+            OpenCamPanel(false); 
         }
-        else
+
+        OpenIngamePanel(false);
+
+        DOVirtual.DelayedCall(0.5f, () =>
         {
-            OpenIngamePanel(false);
-            DOVirtual.DelayedCall(0.7f, () =>
+            UIAnimation.Fade(bg, 0.5f, true, 1);
+            bg.gameObject.SetActive(true);
+            DOVirtual.DelayedCall(0.5f, () =>
             {
-                ChangeMusic(bg_music);
-                UnLoadScene();
-                ShowOffHomePanel(true);
+                bg_Ingame.gameObject.SetActive(false);
             });
-            DOVirtual.DelayedCall(1.2f, () =>
-            {
-                buttonActive.Active();
-            });
-        }
-       
+
+        });
+
+        DOVirtual.DelayedCall(0.7f, () =>
+        {
+           
+
+            ChangeMusic(bg_music);
+            UnLoadScene();
+            ShowOffHomePanel(true);
+        });
+        DOVirtual.DelayedCall(1.2f, () =>
+        {
+            buttonActive.Active();
+        });
+
+
+
     }
 
-    void LoadSceme()
+
+    void LoadScene()
     {
         buttonActive.DeActive();
         ShowOffHomePanel(false);
+        DOVirtual.DelayedCall(0.5f, () =>
+        {
+            bg_Ingame.gameObject.SetActive(true);
+            UIAnimation.Fade(bg, 0.2f, false, 1);
+        });
+
         DOVirtual.DelayedCall(0.7f, () =>
         {
             OpenIngamePanel(true);
+
             ChangeMusic(in_music);
 
             if (PlayerPrefs.GetInt(CurrentLevelID) == 12)
@@ -356,36 +371,36 @@ public class UIManager : MonoBehaviour
             });
           
         }
-        //if (Input.GetKeyDown(KeyCode.T))
-        //{
-        //    NextLevel();
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            NextLevel();
 
-        //}
-        //if (Input.GetKeyDown(KeyCode.L))
-        //{
-        //    endGameLoad.Lose();
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            endGameLoad.Lose();
 
-        //}
-        //if (Input.GetKeyDown(KeyCode.K))
-        //{
-        //    endGameLoad.Win();
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            endGameLoad.Win();
 
-        //}
+        }
     }
     public void LevelUp()
     {
-        int currentLevel = PlayerPrefs.GetInt(CurrentLevelID);
-        currentLevel++;
-        if (currentLevel > 19)
-        {
-            currentLevel = 0;
-        }
-        PlayerPrefs.SetInt(CurrentLevelID, currentLevel);
+        //int currentLevel = PlayerPrefs.GetInt(CurrentLevelID);
+        //currentLevel++;
+        //if (currentLevel > 19)
+        //{
+        //    currentLevel = 0;
+        //}
+        //PlayerPrefs.SetInt(CurrentLevelID, currentLevel);
        
     }
     public void LoadLevel()
     {
-        bg_Ingame.gameObject.SetActive(true);
+       
         int currentLevel = PlayerPrefs.GetInt(CurrentLevelID);
 
         if (PlayerPrefs.GetInt(CurrentLevelID) == 12)
@@ -461,6 +476,8 @@ public class UIManager : MonoBehaviour
 
     [Header("WebCam")]
     public Image bg;
+    public Image bg_Ingame;
+    public Image webCamBG;
     public RawImage rawImage; // Gắn RawImage vào đây
     private WebCamTexture webCamTexture;
     private WebCamDevice[] devices;    // Danh sách các camera
@@ -499,16 +516,16 @@ public class UIManager : MonoBehaviour
     {
         buttonActive.DeActive();
         OpenCamPanel(true);
-        bg.gameObject.SetActive(false);
         bg_Ingame.gameObject.SetActive(false);
         rawImage.gameObject.SetActive(true);
+        webCamBG.gameObject.SetActive(true);
         DOVirtual.DelayedCall(1f, () =>
         {
             buttonActive.Active();
         });
 
 
-#if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID //&& !UNITY_EDITOR
 
         if (!Permission.HasUserAuthorizedPermission(Permission.Camera))
         {
@@ -518,7 +535,7 @@ public class UIManager : MonoBehaviour
         StartCoroutine(WaitToHavePermission());
 #endif
     }
-#if UNITY_ANDROID  && !UNITY_EDITOR
+#if UNITY_ANDROID  //&& !UNITY_EDITOR
     void OnApplicationFocus(bool hasFocus)
     {
         if (hasFocus && Permission.HasUserAuthorizedPermission(Permission.Camera) && webCamTexture == null)
@@ -565,17 +582,40 @@ public class UIManager : MonoBehaviour
         rawImage.texture = webCamTexture;
         rawImage.material.mainTexture = webCamTexture;
 
-        rawImage.rectTransform.localEulerAngles = new Vector3(0, 0, cameraIndex == 0 ? -90 : -270);
+        rawImage.rectTransform.localEulerAngles = new Vector3(0, cameraIndex == 0 ? 0 : -180, cameraIndex == 0 ? -90 : -270);
+
         //rawImage.uvRect = webCamTexture.videoVerticallyMirrored
         //        ? new Rect(1, 0, -1, 1)  // Lật theo chiều dọc
         //        : new Rect(0, 0, 1, 1);   // Không lật
 
         // Bắt đầu phát camera
         webCamTexture.Play();
+        StartCoroutine(AdjustRawImageSize(webCamTexture));
+    }
+    IEnumerator AdjustRawImageSize(WebCamTexture webCamTexture)
+    {
+        // Chờ camera khởi động
+        yield return new WaitUntil(() => webCamTexture.width > 100);
+
+        // Tính tỷ lệ khung hình của camera
+        float aspectRatio = (float)webCamTexture.width / webCamTexture.height;
+
+        // Kích thước của RectTransform
+        RectTransform rt = rawImage.rectTransform;
+
+        // Điều chỉnh chiều rộng hoặc chiều cao của RawImage để phù hợp với tỷ lệ khung hình của camera
+        if (aspectRatio > 1)
+        {
+            rt.sizeDelta = new Vector2(rt.sizeDelta.y * aspectRatio, rt.sizeDelta.y);
+        }
+        else
+        {
+            rt.sizeDelta = new Vector2(rt.sizeDelta.x, rt.sizeDelta.x / aspectRatio);
+        }
     }
     public void SwitchCamera()
     {
-#if UNITY_ANDROID  && !UNITY_EDITOR
+#if UNITY_ANDROID  //&& !UNITY_EDITOR
 
         // Đảo chỉ mục camera (0 -> 1 hoặc 1 -> 0)
         currentCameraIndex = (currentCameraIndex + 1) % devices.Length;
@@ -585,29 +625,35 @@ public class UIManager : MonoBehaviour
 #endif
 
     }
-    public void StopShowCamera()
+    void StopShowCamera()
     {
         buttonActive.DeActive();
-        OpenCamPanel(false);
-        rawImage.texture = null;
-        rawImage.gameObject.SetActive(false);
-        bg.gameObject.SetActive(true);
-        bg_Ingame.gameObject.SetActive(true);
+        StopCam();
         DOVirtual.DelayedCall(1f, () =>
         {
             buttonActive.Active();
         });
 
-#if UNITY_ANDROID && !UNITY_EDITOR
 
-       
+    }
+    public void StopCam()
+    {
+        OpenCamPanel(false);
+        rawImage.texture = null;
+        rawImage.gameObject.SetActive(false);
+        webCamBG.gameObject.SetActive(false);
+        bg_Ingame.gameObject.SetActive(true);
+
+#if UNITY_ANDROID //&& !UNITY_EDITOR
+
+
         // Dừng camera khi không cần nữa
         if (webCamTexture != null)
         {
+            Destroy(webCamTexture);
             webCamTexture.Stop();
         }
 #endif
-
     }
     //// Start is called before the first frame update
     //void Start()
