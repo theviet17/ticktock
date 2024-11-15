@@ -3,6 +3,7 @@ using DG.Tweening;
 using MoreMountains.NiceVibrations;
 using System.Collections;
 using UnityEngine.EventSystems;
+using UnityEngine.Pool;
 
 public class NailHammerEffect : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class NailHammerEffect : MonoBehaviour
 
     public float timer = 15;
     bool End = false;
+
+    public ObjectPool objectPool;
 
     void Start()
     {
@@ -42,6 +45,7 @@ public class NailHammerEffect : MonoBehaviour
                     // Mỗi lần gõ búa, đinh lún xuống một khoảng
                     transform.DOMoveY(transform.position.y - depthPerHit, 0.1f);
                     hammer.DOMoveY(hammer.position.y - depthPerHit, 0.1f);
+                    objectPool.transform.DOMoveY(objectPool.transform.position.y - depthPerHit, 0.1f);
 
                     // Đếm số lần gõ
                     currentHits++;
@@ -120,6 +124,11 @@ public class NailHammerEffect : MonoBehaviour
                 hit.Play();
             }
             UIManager.I.Haptic();
+            Animator fx = objectPool.GetObjectFromPool().GetComponent<Animator>();
+            fx.gameObject.SetActive(true);
+            fx.SetTrigger("spark");
+            DOVirtual.DelayedCall(0.3f, () => objectPool.ReturnObjectToPool(fx.gameObject));
+
 
 
             hammer.DOLocalRotate(hammerHeightEuler, 0.1f).SetEase(Ease.OutQuad);

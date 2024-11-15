@@ -176,6 +176,7 @@ public class Level20Manager : MonoBehaviour
     public AudioSource trungVo;
     public void OpenEgg(GameObject egg)
     {
+        
         if (Setting.SoundCheck())
         {
             trungRoiVaoRo.Play();
@@ -186,8 +187,8 @@ public class Level20Manager : MonoBehaviour
 
         egg.transform.SetParent(transform);
         Destroy(egg.GetComponent<Rigidbody2D>());
-        egg.GetComponent<PolygonCollider2D>().isTrigger = true;
-        var newPos = egg.transform.localPosition + new Vector3(0, Random.Range(-0.1f, 0.5f), 0);
+        Destroy(egg.GetComponent<PolygonCollider2D>());//.isTrigger = true;
+        var newPos = egg.transform.localPosition - new Vector3(0,1f,0) + new Vector3(0, Random.Range(-0.1f, 0.5f), 0);
         egg.transform.DOLocalMoveY(newPos.y, 0.3f).SetEase(Ease.OutBack);
 
         if(currentEgg >= eggRequest)
@@ -195,6 +196,7 @@ public class Level20Manager : MonoBehaviour
             Win = true;
             EndGame();
         }
+        //egg.name = "done";
     }
     
     void EndGame()

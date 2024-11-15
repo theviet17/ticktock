@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using DG.Tweening;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine.EventSystems;
 
 public class BallController : MonoBehaviour
@@ -122,10 +121,16 @@ public class BallController : MonoBehaviour
 
     public void SetAudioClip(float y)
     {
-        int index = (int)y;
+        //int index = (int)y;
+        //index--;
+        //index = Mathf.Clamp(index, 0, 6);
+        //main.clip = sources[index];
+
+        float x = 0.7f; // Giá trị x bạn muốn tăng dần
+        int index = Mathf.FloorToInt(y / 0.7f); // Chia x cho 0.7 để tính index
         index--;
-        index = math.clamp(index, 0, 6);
-        main.clip = sources[index];
+        index = Mathf.Clamp(index, 0, 6); // Đảm bảo index nằm trong khoảng từ 0 đến 6
+        main.clip = sources[index]; 
     }
     void UpdateCamPos()
     {
