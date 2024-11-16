@@ -8,8 +8,13 @@ using System;
 using System.IO;
 using UnityEngine.Networking;
 using UnityEngine.Android;
+using Spine.Unity;
+using BaseService;
 public class EndGameLoad : MonoBehaviour
 {
+    public NativeAdHandler winNative;
+    public NativeAdHandler loseNative;
+  
     [Header("Lose")]
     public Image bg;
     public GameObject losePanel;
@@ -33,6 +38,13 @@ public class EndGameLoad : MonoBehaviour
     }
     public void Lose()
     {
+        loseNative.ReLoadNative();
+        if (UIManager.I.currentSceneLoad > 2)
+        {
+            loseCount++;
+        }
+       
+
         UIManager.I.buttonActive.DeActive();
         if (UIManager.I._settingPanel.activeInHierarchy)
         {
@@ -67,9 +79,9 @@ public class EndGameLoad : MonoBehaviour
         {
 
             Sound(false);
+            losePanel.gameObject.SetActive(open);
             UIAnimation.Fade(bg, 0.3f, true, 0.97f);
 
-            losePanel.gameObject.SetActive(open);
             UIAnimation.HorizontalTween(you_lose.gameObject, 0, open, UIManager.I._camera, UIAnimation.Direction.left);
             UIAnimation.HorizontalTween(icon.gameObject, 0, open, UIManager.I._camera, UIAnimation.Direction.left);
 
@@ -81,6 +93,7 @@ public class EndGameLoad : MonoBehaviour
 
             UIAnimation.HorizontalTween(noThank.gameObject, 0, open, UIManager.I._camera, UIAnimation.Direction.left);
             UIAnimation.ScaleTween(noThank.gameObject.transform, 0.5f, open, Vector3.zero, Vector3.one, 2);
+
         }
         else
         {
@@ -118,12 +131,132 @@ public class EndGameLoad : MonoBehaviour
         }
        
     }
+
+    public SkeletonGraphic tym;
+    void OpenWinPanel(bool open = true)
+    {
+        if (open)
+        {
+            Sound(true);
+
+            UIAnimation.Fade(bgWin, 0.3f, true, 0.97f);
+
+            winPanel.gameObject.SetActive(open);
+
+            UIAnimation.VerticalTween(Box.gameObject, 0.5f, open, UIManager.I._camera, UIAnimation.Direction.top, 0.3f, 283f);
+            UIAnimation.ScaleTween(frame.gameObject.transform, 0.5f, open, Vector3.zero, Vector3.one * 0.3f, 0.8f);
+
+            UIAnimation.HorizontalTween(Next.gameObject, 0.5f, open, UIManager.I._camera, UIAnimation.Direction.right, 0.9f, 162.92f);
+            UIAnimation.HorizontalTween(SavePhoto.gameObject, 0.5f, open, UIManager.I._camera, UIAnimation.Direction.left, 1.1f, -126.28f);
+
+            DOVirtual.DelayedCall(1, () => tym.AnimationState.SetAnimation(0, "anim", false));
+
+        }
+        else
+        {
+            UIManager.I.buttonActive.DeActive();
+            UIAnimation.VerticalTween(Box.gameObject, 0.5f, open, UIManager.I._camera, UIAnimation.Direction.top, 0, 283f);
+            UIAnimation.ScaleTween(frame.gameObject.transform, 0.5f, open, Vector3.zero, Vector3.one * 0.3f);
+            UIAnimation.HorizontalTween(Next.gameObject, 0.5f, open, UIManager.I._camera, UIAnimation.Direction.right);
+            UIAnimation.HorizontalTween(SavePhoto.gameObject, 0.5f, open, UIManager.I._camera, UIAnimation.Direction.left);
+
+            DOVirtual.DelayedCall(0.7f, () =>
+            {
+                bgWin.DOFade(1, 0.5f).OnComplete(() =>
+                {
+                    UIManager.I.ShowRequest(false, "0", "0");
+                    UIManager.I.UnLoadScene();
+
+                    DOVirtual.DelayedCall(0.1f, () =>
+                    {
+                        UIManager.I.LoadLevel();
+                    });
+                    bgWin.DOFade(0, 0.5f).SetDelay(0.2f).OnComplete(() =>
+                    {
+                        UIManager.I.TurnOnMusic(Setting.MusicCheck());
+                        winPanel.gameObject.SetActive(open);
+                        EnableeSaveButton(true);
+                        DOVirtual.DelayedCall(0.5f, () =>
+                        {
+                            UIManager.I.buttonActive.Active();
+                        });
+                    });
+                });
+
+            });
+
+ 
+
+        }
+
+    }
     private void Start()
     {
         peplay.onClick.AddListener( ()=>OpenLosePanel(false));
-        skip.onClick.AddListener(() => OpenLosePanel(false));
-        noThank.onClick.AddListener(() => OpenLosePanel(false));
-        Next.onClick.AddListener(() => OpenWinPanel(false));
+        skip.onClick.AddListener(() => SkipLevel_Click());
+
+        noThank.onClick.AddListener(() => RePlayButton_Click());
+
+        Next.onClick.AddListener(() => NextButton_Click());
+        SavePhoto.onClick.AddListener(() => SaveImageToGallery());
+    }
+    public int winCount = 0;
+    public int loseCount = 0;
+    void NextButton_Click()
+    {
+        if(winCount >= 2)
+        {
+            GoogleMobileAdsManager.I.ShowInterstitialAd(() =>
+            {
+                OpenWinPanel(false);
+                winCount = 0;
+            });
+        }
+        else
+        {
+            OpenWinPanel(false);
+        }
+    }
+    void RePlayButton_Click()
+    {
+        if (loseCount >= 2)
+        {
+            GoogleMobileAdsManager.I.ShowInterstitialAd(() =>
+            {
+                OpenLosePanel(false);
+                loseCount = 0;
+            });
+        }
+        else
+        {
+            OpenLosePanel(false);
+        }
+    }
+    void SkipLevel_Click()
+    {
+        Debug.Log("Reward start");
+        //AdsUtils.ShowRewardWithBackFill((result) =>
+        //{
+        //    if (result == AdsManager.AdsResult.Success)
+        //    {
+        //        Debug.Log("Reward done");
+        //        UIManager.I.LevelUp();
+        //        OpenLosePanel(false);
+        //        // Handle success (e.g., grant reward)
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("Reward fail");
+        //        // Handle failure (e.g., show error or retry)
+        //    }
+        //});
+        GoogleMobileAdsManager.I.LoadRewardedAd(() =>
+        {
+            Debug.Log("Reward done");
+            UIManager.I.LevelUp();
+            OpenLosePanel(false);
+        });
+
     }
 
 
@@ -131,13 +264,21 @@ public class EndGameLoad : MonoBehaviour
    
     public Image bgWin;
     public GameObject winPanel;
+    public Image Box;
     public Image frame;
     public Button Next;
+    public Button SavePhoto;
     public Image pic;
 
     public void Win()
     {
+        winNative.ReLoadNative();
+        if (UIManager.I.currentSceneLoad > 2)
+        {
+            winCount++;
+        }
 
+        UIManager.I.LevelUp();
         SceceCapture();
        
         //UIManager.I.ShowTime(false, 100);
@@ -162,68 +303,42 @@ public class EndGameLoad : MonoBehaviour
         }
 
         UIManager.I.buttonActive.DeActive();
-        float timeDelayOpenLosePanel = 0; //a
 
+
+        float timeDelayOpenLosePanel = 0;
         if (UIManager.I.isOpenCam)
         {
             UIManager.I.StopCam();
             UIManager.I.OpenCamPanel(false);
             timeDelayOpenLosePanel = 1;
+             
+            
         }
         DOVirtual.DelayedCall(timeDelayOpenLosePanel, () =>
         {
             //UIManager.I.UnLoadScene();
-            OpenLosePanel();
-            DOVirtual.DelayedCall(2.1f, () =>
+            OpenWinPanel();
+            DOVirtual.DelayedCall(1f, () =>
             {
                 UIManager.I.buttonActive.Active();
             });
         });
 
-        if (UIManager.I.isOpenCam)
-        {
-            UIManager.I.StopCam();
-            UIManager.I.OpenCamPanel(false);
-            DOVirtual.DelayedCall(1f, () =>
-            {
-                UIManager.I.UnLoadScene();
-               
-            });
-        }
-        else
-        {
-            UIManager.I.UnLoadScene();
-            OpenWinPanel();
-            DOVirtual.DelayedCall(1f, () =>
-            {
-                UIManager.I.LevelUp();
-                UIManager.I.buttonActive.Active();
-            });
-        }
-
         ScreenShoot();
-        //// Tạo Texture2D từ ảnh chụp màn hình
-        //Texture2D screenshot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
+  
 
-        //// Đọc các pixel từ khung hình vào Texture2D
-        //screenshot.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
-        //screenshot.Apply();
-
-        //// Gán Texture2D vào Sprite và hiện trong Image
-        //pic.sprite = Sprite.Create(screenshot, new Rect(0, 0, screenshot.width, screenshot.height), new Vector2(0.5f, 0.5f));
-
-        UIManager.I.ShowRequest(false, "0", "0");
+      
     }
     void ScreenShoot()
     {
 
 
-        // Tạo Texture2D từ ảnh chụp màn hình với kích thước 3/5 của chiều cao
-        int captureHeight = Screen.height * 7 / 10;
+
+        int captureHeight = 1500;//Screen.height * 7 / 10;
         Texture2D screenshot = new Texture2D(Screen.width, captureHeight, TextureFormat.RGB24, false);
 
-        // Tính toán toạ độ Y để bắt đầu chụp từ 1/5 chiều cao từ trên
-        int startY = (Screen.height / 10)*2;
+
+        int startY = (Screen.height / 2) - (1500 / 2); //(Screen.height / 10)*2;
 
         // Đọc các pixel từ vùng giữa của khung hình vào Texture2D
         screenshot.ReadPixels(new Rect(0, startY, Screen.width, captureHeight), 0, 0);
@@ -236,7 +351,7 @@ public class EndGameLoad : MonoBehaviour
 
         saveTexture = screenshot;
         fileName = "TickTockSave" + DateTime.Now.ToString("yyyyMMdd_HHmmss_fff");
-        SaveImageToGallery();
+        //SaveImageToGallery();
        
     }
     Texture2D saveTexture;
@@ -259,20 +374,20 @@ public class EndGameLoad : MonoBehaviour
 
         
     }
-    void OnApplicationFocus(bool hasFocus)
-    {
-        if (hasFocus && Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
-        {
-            // Nếu có quyền, lưu ảnh
-            SaveImageToGallery();
-        }
-        else if (hasFocus && !Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
-        {
-            StopCoroutine("WaitToHavePermission");
-            // Nếu không có quyền, có thể hiển thị thông báo hoặc yêu cầu cấp lại quyền
-            Debug.LogWarning("Permission for storage access denied!");
-        }
-    }
+    //void OnApplicationFocus(bool hasFocus)
+    //{
+    //    if (hasFocus && Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
+    //    {
+    //        // Nếu có quyền, lưu ảnh
+    //        SaveImageToGallery();
+    //    }
+    //    else if (hasFocus && !Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
+    //    {
+    //        StopCoroutine("WaitToHavePermission");
+    //        // Nếu không có quyền, có thể hiển thị thông báo hoặc yêu cầu cấp lại quyền
+    //        Debug.LogWarning("Permission for storage access denied!");
+    //    }
+    //}
     IEnumerator WaitToHavePermission()
     {
         // Chờ cho đến khi người dùng cấp quyền
@@ -281,8 +396,44 @@ public class EndGameLoad : MonoBehaviour
         // Sau khi có quyền, thực hiện lưu ảnh
         SaveImageToGallery();
     }
+    void EnableeSaveButton(bool enable)
+    {
+        SavePhoto.enabled = enable;
+        Image grayImage = SavePhoto.transform.GetChild(0).GetComponent<Image>();
+        if (enable)
+        {
+            grayImage.gameObject.SetActive(false);
+            grayImage.DOFade(0, 0);
+        }
+        else
+        {
+            grayImage.gameObject.SetActive(true);
+            grayImage.DOFade(1, 0.3f);
+        }
+
+    }
+    public GameObject notification;
+    void OpenNotification()
+    {
+        Debug.Log("Show Notification");
+        UIManager.I.Haptic();
+        notification.gameObject.SetActive(true );
+        RectTransform rt = notification.GetComponent<RectTransform>();
+        rt.anchoredPosition = new Vector2(rt.anchoredPosition.x, 160);
+        rt.DOAnchorPos(new Vector2(rt.anchoredPosition.x, -160), 0.5f);
+        DOVirtual.DelayedCall(2, () =>
+        {
+            rt.DOAnchorPos(new Vector2(rt.anchoredPosition.x, 160), 0.5f).OnComplete(() =>
+            {
+                notification.gameObject.SetActive(false);
+            });
+        });
+    }
     private void SaveImage(Texture2D texture, string fileName)
     {
+        EnableeSaveButton(false);
+        OpenNotification();
+
         // Chuyển texture thành dữ liệu PNG
         byte[] imageData = texture.EncodeToPNG();
 
@@ -296,7 +447,6 @@ public class EndGameLoad : MonoBehaviour
 
         // Yêu cầu hệ thống quét lại thư mục ảnh
         AddImageToGallery(path);
-        ShowNotification(fileName);
         Debug.Log("Image saved to: " + path);
 #else
         Debug.LogWarning("This method only works on Android.");
@@ -324,76 +474,7 @@ public class EndGameLoad : MonoBehaviour
             mediaScanner.CallStatic("scanFile", context, new string[] { path }, null, null);
         }
     }
-    private void ShowNotification(string fileName)
-    {
-#if UNITY_ANDROID && !UNITY_EDITOR
-        using (AndroidJavaClass contextClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
-        using (AndroidJavaObject currentActivity = contextClass.GetStatic<AndroidJavaObject>("currentActivity"))
-        {
-            using (AndroidJavaClass notificationManagerClass = new AndroidJavaClass("android.app.NotificationManager"))
-            {
-                using (AndroidJavaObject notificationManager = currentActivity.Call<AndroidJavaObject>("getSystemService", "notification"))
-                {
-                    using (AndroidJavaClass notificationClass = new AndroidJavaClass("android.app.Notification$Builder"))
-                    {
-                        AndroidJavaObject notificationBuilder = notificationClass.Call<AndroidJavaObject>("new", currentActivity);
+   
 
-                        // Lấy tài nguyên icon đúng cách
-                        AndroidJavaObject resources = currentActivity.Call<AndroidJavaObject>("getResources");
-                        int iconId = resources.Call<int>("getIdentifier", "ic_launcher", "drawable", currentActivity.Call<string>("getPackageName"));
-                        
-                        notificationBuilder.Call<AndroidJavaObject>("setContentTitle", "Image Saved");
-                        notificationBuilder.Call<AndroidJavaObject>("setContentText", fileName + " has been saved to the gallery.");
-                        notificationBuilder.Call<AndroidJavaObject>("setSmallIcon", iconId);  // Sử dụng icon ID lấy từ resources
-                        notificationBuilder.Call<AndroidJavaObject>("setAutoCancel", true);
-
-                        AndroidJavaObject notification = notificationBuilder.Call<AndroidJavaObject>("build");
-
-                        // Hiển thị thông báo
-                        notificationManager.Call("notify", 0, notification);
-                    }
-                }
-            }
-        }
-#endif
-    }
-
-    void OpenWinPanel(bool open = true)
-    {
-        if (open)
-        {
-            Sound(true);
-
-            bgWin.DOColor(Color.black, 0);
-            winPanel.gameObject.SetActive(open);
-            //UIAnimation.HorizontalTween(frame.gameObject, 0, open, UIManager.I._camera, UIAnimation.Direction.left);
-
-            UIAnimation.ScaleTween(frame.gameObject.transform, 0.5f, open, Vector3.zero, Vector3.one*0.3f);
-
-            UIAnimation.HorizontalTween(Next.gameObject, 0.5f, open, UIManager.I._camera, UIAnimation.Direction.left, 0.5f);
-        }
-        else
-        {
-            UIManager.I.buttonActive.DeActive();
-            UIAnimation.ScaleTween(frame.gameObject.transform, 0.5f, open, Vector3.zero, Vector3.one * 0.3f);
-            UIAnimation.HorizontalTween(Next.gameObject, 0.5f, open, UIManager.I._camera, UIAnimation.Direction.left);
-
-            DOVirtual.DelayedCall(0.7f, () =>
-            {
-                bgWin.DOColor(color, 0.5f).OnComplete(() =>
-                {
-                    UIManager.I.TurnOnMusic(Setting.MusicCheck());
-                    UIManager.I.LoadLevel();
-                    winPanel.gameObject.SetActive(open);
-
-                    DOVirtual.DelayedCall(0.5f, () =>
-                    {
-                        UIManager.I.buttonActive.Active();
-                    });
-                });
-            });
-
-        }
-
-    }
+    
 }
