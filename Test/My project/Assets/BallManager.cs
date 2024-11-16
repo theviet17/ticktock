@@ -60,7 +60,7 @@ public class BallManager : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
-
+        UIManager.I.buttonActive.DeActive();
         DOVirtual.DelayedCall(1.3f, () =>
         {
             if (Win)
@@ -77,7 +77,7 @@ public class BallManager : MonoBehaviour
     }
     private void Update()
     {
-        if (!End)
+        if (!End && !UIManager.I._pause)
         {
             timer -= Time.deltaTime;
             UIManager.I.ChangeTime((int)timer);
@@ -125,8 +125,8 @@ public class BallManager : MonoBehaviour
         y = Mathf.Clamp(y, 0f, 8*0.7f);
         float tyle = y / 8 * 0.7f;
         Vector3 newPos = Vector3.Lerp(point1.transform.position, point2.transform.position, tyle);
-        newPos.x = zone.transform.position.x;
-        zone.transform.position = newPos;
+
+        zone.transform.DOMoveY(newPos.y, 0.3f);
     }
 
     public void FixedUpdate()

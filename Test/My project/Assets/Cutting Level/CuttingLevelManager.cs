@@ -43,6 +43,7 @@ public class CuttingLevelManager : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
+        UIManager.I.buttonActive.DeActive();
         xTween.Kill();
         DOVirtual.DelayedCall(1.3f, () =>
         {
@@ -64,7 +65,7 @@ public class CuttingLevelManager : MonoBehaviour
     void Update()
     {
        
-        if (!End)
+        if (!End && !UIManager.I._pause)
         {
             timer -= Time.deltaTime;
             UIManager.I.ChangeTime((int)timer);
@@ -85,8 +86,16 @@ public class CuttingLevelManager : MonoBehaviour
                 End = true;
             }
         }
+        if (UIManager.I._pause && xTween.IsPlaying())
+        {
+            xTween.Pause();
+        }
+        else if (!UIManager.I._pause && !xTween.IsPlaying())
+        {
+            xTween.Play();
+        }
 
-       
+
 
     }
     private bool IsPointerOverButton()
