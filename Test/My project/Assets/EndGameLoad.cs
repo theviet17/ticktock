@@ -9,11 +9,11 @@ using System.IO;
 using UnityEngine.Networking;
 using UnityEngine.Android;
 using Spine.Unity;
-//using BaseService;
+using BaseService;
 public class EndGameLoad : MonoBehaviour
 {
-    //public NativeAdHandler winNative;
-    //public NativeAdHandler loseNative;
+    public NativeAdHandler winNative;
+    public NativeAdHandler loseNative;
   
     [Header("Lose")]
     public Image bg;
@@ -38,7 +38,7 @@ public class EndGameLoad : MonoBehaviour
     }
     public void Lose()
     {
-        //loseNative.ReLoadNative();
+        loseNative.ReLoadNative();
         if (UIManager.I.currentSceneLoad > 2)
         {
             loseCount++;
@@ -206,11 +206,11 @@ public class EndGameLoad : MonoBehaviour
     {
         if(winCount >= 2)
         {
-            //GoogleMobileAdsManager.I.ShowInterstitialAd(() =>
-            //{
+            GoogleMobileAdsManager.I.ShowInterstitialAd(() =>
+            {
                 OpenWinPanel(false);
                 winCount = 0;
-            //});
+            });
         }
         else
         {
@@ -221,11 +221,11 @@ public class EndGameLoad : MonoBehaviour
     {
         if (loseCount >= 2)
         {
-            //GoogleMobileAdsManager.I.ShowInterstitialAd(() =>
-            //{
+            GoogleMobileAdsManager.I.ShowInterstitialAd(() =>
+            {
                 OpenLosePanel(false);
                 loseCount = 0;
-            //});
+            });
         }
         else
         {
@@ -234,7 +234,6 @@ public class EndGameLoad : MonoBehaviour
     }
     void SkipLevel_Click()
     {
-        OpenLosePanel(false);
         Debug.Log("Reward start");
         //AdsUtils.ShowRewardWithBackFill((result) =>
         //{
@@ -251,12 +250,12 @@ public class EndGameLoad : MonoBehaviour
         //        // Handle failure (e.g., show error or retry)
         //    }
         //});
-        //GoogleMobileAdsManager.I.LoadRewardedAd(() =>
-        //{
-        //    Debug.Log("Reward done");
-        //    UIManager.I.LevelUp();
-        //    OpenLosePanel(false);
-        //});
+        GoogleMobileAdsManager.I.LoadRewardedAd(() =>
+        {
+            Debug.Log("Reward done");
+            UIManager.I.LevelUp();
+            OpenLosePanel(false);
+        });
 
     }
 
@@ -273,7 +272,7 @@ public class EndGameLoad : MonoBehaviour
 
     public void Win()
     {
-        //winNative.ReLoadNative();
+        winNative.ReLoadNative();
         if (UIManager.I.currentSceneLoad > 2)
         {
             winCount++;

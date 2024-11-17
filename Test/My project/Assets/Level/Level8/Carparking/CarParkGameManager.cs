@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class CarParkGameManager : MonoBehaviour
 {
-    public Camera camera;
+    //public Camera camera;
     public bool End = false;
     bool Win = false;
 
@@ -20,7 +20,7 @@ public class CarParkGameManager : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
-
+        UIManager.I.buttonActive.DeActive();
         if (Win)
         {
             DOVirtual.DelayedCall(1.3f, () =>
@@ -45,7 +45,7 @@ public class CarParkGameManager : MonoBehaviour
     }
     void Update()
     {
-        if (!End)
+        if (!End && !UIManager.I._pause)
         {
             if (Input.GetMouseButtonDown(0))
             {

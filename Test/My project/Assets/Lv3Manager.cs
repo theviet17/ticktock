@@ -92,7 +92,7 @@ public class Lv3Manager : PingPongMover
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
-
+        UIManager.I.buttonActive.DeActive();
         DOVirtual.DelayedCall(4f, () =>
         {
             if (Win)

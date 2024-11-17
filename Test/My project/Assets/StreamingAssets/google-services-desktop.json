@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835475564510",
+    "project_id": "mini-game-a79f3",
+    "storage_bucket": "mini-game-a79f3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835475564510:android:979a7bac44df4dbd3b1f4f",
+        "android_client_info": {
+          "package_name": "com.minigame.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkEJhkRcU2cCTt1ouyOlNVXWdcdHy-358"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

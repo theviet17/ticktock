@@ -49,7 +49,7 @@ public class PingPongMover : MonoBehaviour
     public void Update()
     {
        
-        if (!End)
+        if (!End && !UIManager.I._pause)
         {
             if (Input.GetMouseButtonDown(0) && active)
             {
@@ -57,6 +57,7 @@ public class PingPongMover : MonoBehaviour
                 {
                     if (!clicked)
                     {
+                        UIManager.I.buttonActive.DeActive();
                         End = true;
                         clicked = true;
                         moveTween.Kill();
@@ -77,6 +78,7 @@ public class PingPongMover : MonoBehaviour
 
             if (timer < 0)
             {
+                UIManager.I.buttonActive.DeActive();
                 End = true;
                 moveTween.Kill();
             }

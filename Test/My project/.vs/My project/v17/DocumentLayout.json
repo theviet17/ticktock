@@ -1,145 +1,150 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ticktock\\Test\\My project\\",
+  "WorkspaceRootPath": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\ticktock\\test\\my project\\assets\\level20manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level20manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3BE0F8C-D469-E1F7-FC7F-74242E871913}|MaxSdk.Scripts.IntegrationManager.Editor.csproj|c:\\users\\84347\\downloads\\new folder (2)\\ticktock\\test\\my project\\assets\\maxsdk\\scripts\\integrationmanager\\editor\\applovinpostprocessandroidgradle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3BE0F8C-D469-E1F7-FC7F-74242E871913}|MaxSdk.Scripts.IntegrationManager.Editor.csproj|solutionrelative:assets\\maxsdk\\scripts\\integrationmanager\\editor\\applovinpostprocessandroidgradle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\ticktock\\test\\my project\\assets\\level\\level19\\cola\u0026\u0026mentos\\cocaandmentosmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level19\\cola\u0026\u0026mentos\\cocaandmentosmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\AndroidManifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\AndroidManifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\level16manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level16manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\level15manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level15manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\ticktock\\test\\my project\\assets\\level\\level13\\ball\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level13\\ball\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\ticktock\\test\\my project\\assets\\ballmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\ballmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\acne\\building\\citybuildingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\acne\\building\\citybuildingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\ticktock\\test\\my project\\assets\\endgameload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\endgameload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\endgameload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\level\\level2\\nailhammereffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level2\\nailhammereffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\watermelonelevel\\watermelonlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\watermelonelevel\\watermelonlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\unity-jar-resolver-master\\source\\IOSResolver\\src\\IOSResolverSettingsDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\unity-jar-resolver-master\\source\\IOSResolver\\src\\IOSResolverSettingsDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\ticktock\\test\\my project\\assets\\acne\\building\\electricwiremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{153DD998-86FD-798D-32E0-348E644C414E}|MaxSdk.Scripts.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\MaxSdk\\Scripts\\MaxSdkLogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{153DD998-86FD-798D-32E0-348E644C414E}|MaxSdk.Scripts.csproj|solutionrelative:Assets\\MaxSdk\\Scripts\\MaxSdkLogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\level\\level13\\ball\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level13\\ball\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\level\\level8\\carparking\\carparkgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level8\\carparking\\carparkgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\level20manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level20manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\cutting level\\cuttinglevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\cutting level\\cuttinglevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\acne\\building\\electricwiremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\acne\\building\\electricwiremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\ticktock\\test\\my project\\assets\\acne\\building\\phichdien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\acne\\building\\phichdien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\level16manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level16manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\ticktock\\test\\my project\\assets\\ruoicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\ruoicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\level15manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level15manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\vtt\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\vtt\\ui\\uianimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\acne\\spritepixelcolorchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\acne\\spritepixelcolorchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\acne\\spritepixelcolorchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68288143-6B1A-3912-974A-A8DFE9364E8F}|SimpleGDPRConsent.Runtime.csproj|D:\\ticktock\\Test\\My project\\assets\\plugins\\simplegdprconsent\\scripts\\simplegdpr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68288143-6B1A-3912-974A-A8DFE9364E8F}|SimpleGDPRConsent.Runtime.csproj|solutionrelative:assets\\plugins\\simplegdprconsent\\scripts\\simplegdpr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\ballmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\ballmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\spineanimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\spineanimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\acne\\building\\citybuildingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\acne\\building\\citybuildingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\level\\level4\\bomberwire\\pingpongmover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level4\\bomberwire\\pingpongmover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\prefab\\ui\\script\\customtoggle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\prefab\\ui\\script\\customtoggle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\level\\level1\\knift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level1\\knift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\watermelonelevel\\kinfewatermelonlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\watermelonelevel\\kinfewatermelonlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\labubu\\labubumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\labubu\\labubumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\cockroachlevel\\cockroachlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\cockroachlevel\\cockroachlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\cockroachlevel\\cockroachlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\watermelonelevel\\kinfewatermelonlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\watermelonelevel\\kinfewatermelonlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\watermelonelevel\\watermelonlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\watermelonelevel\\watermelonlevelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\level\\level4\\bomberwire\\boomwiremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level\\level4\\bomberwire\\boomwiremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\lv3manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\lv3manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\Knift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\save the dog\\savethedogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\save the dog\\savethedogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\ticktock\\Test\\My project\\assets\\spritecutter\\_example\\linecastcutter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\spritecutter\\_example\\linecastcutter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\vtt\\ui\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\vtt\\ui\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\level20support.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\level20support.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A2F10FE-0898-9C1C-9897-D62F3A6958CF}|Assembly-CSharp-firstpass.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\assets\\plugins\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6A2F10FE-0898-9C1C-9897-D62F3A6958CF}|Assembly-CSharp-firstpass.csproj|solutionrelative:assets\\plugins\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Script\\SonUtils\\DataClear\\ClearPlayerDataUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\SonUtils\\DataClear\\ClearPlayerDataUtility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\BoomWireManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdsManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\_GameAssets\\Services\\AdsManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\PingPongMover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Native\\Prefabs\\NativeAdHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\Native\\Prefabs\\NativeAdHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdsUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\_GameAssets\\Services\\AdsUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\GoogleMobileAdsManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\_GameAssets\\Services\\GoogleMobileAdsManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdsKeysManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\_GameAssets\\Services\\AdsKeysManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\RemoteConfigControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\_GameAssets\\Services\\RemoteConfigControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdmobPrivacy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\_GameAssets\\Services\\AdmobPrivacy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\BannerBackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:Assets\\_GameAssets\\Services\\BannerBackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -153,466 +158,439 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "UIManager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\UIManager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\UIManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\UIManager.cs",
               "RelativeToolTip": "Assets\\UIManager.cs",
-              "ViewState": "AQIAAF4BAAAAAAAAAAAMwHoBAAAdAAAA",
+              "ViewState": "AgIAAI0BAAAAAAAAAAAiwKUBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T03:50:35.577Z",
+              "WhenOpened": "2024-11-14T17:27:05.12Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "EndGameLoad.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\EndGameLoad.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\EndGameLoad.cs",
               "RelativeDocumentMoniker": "Assets\\EndGameLoad.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\EndGameLoad.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\EndGameLoad.cs",
               "RelativeToolTip": "Assets\\EndGameLoad.cs",
-              "ViewState": "AQIAAIwAAAAAAAAAAAAuwKgAAAAjAAAA",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwCUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T08:17:15.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BallManager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\BallManager.cs",
-              "RelativeDocumentMoniker": "Assets\\BallManager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\BallManager.cs",
-              "RelativeToolTip": "Assets\\BallManager.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAcwAwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:33:10.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NailHammerEffect.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Level\\Level2\\NailHammerEffect.cs",
-              "RelativeDocumentMoniker": "Assets\\Level\\Level2\\NailHammerEffect.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Level\\Level2\\NailHammerEffect.cs",
-              "RelativeToolTip": "Assets\\Level\\Level2\\NailHammerEffect.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwDsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T16:32:20.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BallController.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Level\\Level13\\Ball\\BallController.cs",
-              "RelativeDocumentMoniker": "Assets\\Level\\Level13\\Ball\\BallController.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Level\\Level13\\Ball\\BallController.cs",
-              "RelativeToolTip": "Assets\\Level\\Level13\\Ball\\BallController.cs",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAmwJwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:09:19.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Level20Manager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Level20Manager.cs",
-              "RelativeDocumentMoniker": "Assets\\Level20Manager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Level20Manager.cs",
-              "RelativeToolTip": "Assets\\Level20Manager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T06:28:47.585Z",
+              "WhenOpened": "2024-11-14T18:41:24.272Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CoCaAndMentosManager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Level\\Level19\\Cola\u0026\u0026Mentos\\CoCaAndMentosManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Level\\Level19\\Cola\u0026\u0026Mentos\\CoCaAndMentosManager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Level\\Level19\\Cola\u0026\u0026Mentos\\CoCaAndMentosManager.cs",
-              "RelativeToolTip": "Assets\\Level\\Level19\\Cola\u0026\u0026Mentos\\CoCaAndMentosManager.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAwwFYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T06:22:43.128Z",
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\AndroidManifest.xml",
+              "RelativeToolTip": "Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\AndroidManifest.xml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-11-16T19:39:22.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WaterMelonLevelManager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
-              "RelativeDocumentMoniker": "Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
-              "RelativeToolTip": "Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAwwEUAAAALAAAA",
+              "DocumentIndex": 5,
+              "Title": "MaxSdkLogger.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\MaxSdk\\Scripts\\MaxSdkLogger.cs",
+              "RelativeDocumentMoniker": "Assets\\MaxSdk\\Scripts\\MaxSdkLogger.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\MaxSdk\\Scripts\\MaxSdkLogger.cs",
+              "RelativeToolTip": "Assets\\MaxSdk\\Scripts\\MaxSdkLogger.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAD4vzYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T17:15:23.371Z",
+              "WhenOpened": "2024-11-16T19:32:13.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IOSResolverSettingsDialog.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\unity-jar-resolver-master\\source\\IOSResolver\\src\\IOSResolverSettingsDialog.cs",
+              "RelativeDocumentMoniker": "Assets\\unity-jar-resolver-master\\source\\IOSResolver\\src\\IOSResolverSettingsDialog.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\unity-jar-resolver-master\\source\\IOSResolver\\src\\IOSResolverSettingsDialog.cs",
+              "RelativeToolTip": "Assets\\unity-jar-resolver-master\\source\\IOSResolver\\src\\IOSResolverSettingsDialog.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T17:37:13.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppLovinPostProcessAndroidGradle.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\MaxSdk\\Scripts\\IntegrationManager\\Editor\\AppLovinPostProcessAndroidGradle.cs",
+              "RelativeDocumentMoniker": "Assets\\MaxSdk\\Scripts\\IntegrationManager\\Editor\\AppLovinPostProcessAndroidGradle.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\MaxSdk\\Scripts\\IntegrationManager\\Editor\\AppLovinPostProcessAndroidGradle.cs",
+              "RelativeToolTip": "Assets\\MaxSdk\\Scripts\\IntegrationManager\\Editor\\AppLovinPostProcessAndroidGradle.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAnwDYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T13:38:12.898Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PhichDien.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\PhichDien.cs",
-              "RelativeDocumentMoniker": "Assets\\Acne\\Building\\PhichDien.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\PhichDien.cs",
-              "RelativeToolTip": "Assets\\Acne\\Building\\PhichDien.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAwwFgAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T06:06:25.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ElectricWireManager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\ElectricWireManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Acne\\Building\\ElectricWireManager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\ElectricWireManager.cs",
-              "RelativeToolTip": "Assets\\Acne\\Building\\ElectricWireManager.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAIAwwFMAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T06:06:16.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Level16Manager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Level16Manager.cs",
-              "RelativeDocumentMoniker": "Assets\\Level16Manager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Level16Manager.cs",
-              "RelativeToolTip": "Assets\\Level16Manager.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAcwGsAAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:37:34.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RuoiController.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\RuoiController.cs",
-              "RelativeDocumentMoniker": "Assets\\RuoiController.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\RuoiController.cs",
-              "RelativeToolTip": "Assets\\RuoiController.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAIAwwE8AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:54:09.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Level15Manager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Level15Manager.cs",
-              "RelativeDocumentMoniker": "Assets\\Level15Manager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Level15Manager.cs",
-              "RelativeToolTip": "Assets\\Level15Manager.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAIwFsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:28:36.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SpritePixelColorChecker.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Acne\\SpritePixelColorChecker.cs",
-              "RelativeDocumentMoniker": "Assets\\Acne\\SpritePixelColorChecker.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Acne\\SpritePixelColorChecker.cs",
-              "RelativeToolTip": "Assets\\Acne\\SpritePixelColorChecker.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwB8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T15:35:25.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SimpleGDPR.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Plugins\\SimpleGDPRConsent\\Scripts\\SimpleGDPR.cs",
-              "RelativeDocumentMoniker": "Assets\\Plugins\\SimpleGDPRConsent\\Scripts\\SimpleGDPR.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Plugins\\SimpleGDPRConsent\\Scripts\\SimpleGDPR.cs",
-              "RelativeToolTip": "Assets\\Plugins\\SimpleGDPRConsent\\Scripts\\SimpleGDPR.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T18:09:12.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Setting.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Setting.cs",
-              "RelativeDocumentMoniker": "Assets\\Setting.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Setting.cs",
-              "RelativeToolTip": "Assets\\Setting.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAawFcAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T04:54:37.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Knift.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Level\\Level1\\Knift.cs",
-              "RelativeDocumentMoniker": "Assets\\Level\\Level1\\Knift.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Level\\Level1\\Knift.cs",
-              "RelativeToolTip": "Assets\\Level\\Level1\\Knift.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAuwJcAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T15:36:19.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CustomToggle.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Prefab\\UI\\Script\\CustomToggle.cs",
-              "RelativeDocumentMoniker": "Assets\\Prefab\\UI\\Script\\CustomToggle.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Prefab\\UI\\Script\\CustomToggle.cs",
-              "RelativeToolTip": "Assets\\Prefab\\UI\\Script\\CustomToggle.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T05:51:24.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UIAnimation.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\VTT\\UI\\UIAnimation.cs",
-              "RelativeDocumentMoniker": "Assets\\VTT\\UI\\UIAnimation.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\VTT\\UI\\UIAnimation.cs",
-              "RelativeToolTip": "Assets\\VTT\\UI\\UIAnimation.cs",
-              "ViewState": "AQIAAM4AAAAAAAAAAAAiwN4AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T03:48:08.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "KinfeWaterMelonLevel.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
-              "RelativeDocumentMoniker": "Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
-              "RelativeToolTip": "Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T17:16:56.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "PhichDien.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\PhichDien.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwDQAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:02:02.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ElectricWireManager.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\ElectricWireManager.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:55:34.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CityBuildingManager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\CityBuildingManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Acne\\Building\\CityBuildingManager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\CityBuildingManager.cs",
-              "RelativeToolTip": "Assets\\Acne\\Building\\CityBuildingManager.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAmwH0AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:47:53.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AcneManager.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\AcneManager.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:55:41.991Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "LabubuManager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\Labubu\\LabubuManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Labubu\\LabubuManager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\Labubu\\LabubuManager.cs",
-              "RelativeToolTip": "Assets\\Labubu\\LabubuManager.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowCEAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:53:10.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CockroachLevelManager.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\CockroachLevel\\CockroachLevelManager.cs",
-              "RelativeDocumentMoniker": "Assets\\CockroachLevel\\CockroachLevelManager.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\CockroachLevel\\CockroachLevelManager.cs",
-              "RelativeToolTip": "Assets\\CockroachLevel\\CockroachLevelManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T03:36:43.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CockroachLevelManager.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\CockroachLevelManager.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T03:01:41.397Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "WaterMelonLevelManager.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\WaterMelonLevelManager.cs",
+              "Title": "ClearPlayerDataUtility.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Script\\SonUtils\\DataClear\\ClearPlayerDataUtility.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\SonUtils\\DataClear\\ClearPlayerDataUtility.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Script\\SonUtils\\DataClear\\ClearPlayerDataUtility.cs",
+              "RelativeToolTip": "Assets\\Script\\SonUtils\\DataClear\\ClearPlayerDataUtility.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwFMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T02:41:43.929Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "BoomWireManager.cs",
-              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\BoomWireManager.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\BoomWireManager.cs",
-              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\BoomWireManager.cs",
-              "RelativeToolTip": "..\\..\\..\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\BoomWireManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T02:41:20.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "PingPongMover.cs",
-              "DocumentMoniker": "D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\PingPongMover.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\PingPongMover.cs",
-              "ToolTip": "D:\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\PingPongMover.cs",
-              "RelativeToolTip": "..\\..\\..\\Testa\\Testa\\Test\\My project\\Assets\\BomberWire\\PingPongMover.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAIwCIAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T02:39:41.437Z"
+              "WhenOpened": "2024-11-16T12:26:13.62Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "KinfeWaterMelonLevel.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\KinfeWaterMelonLevel.cs",
+              "Title": "AdsManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdsManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_GameAssets\\Services\\AdsManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdsManager.cs",
+              "RelativeToolTip": "Assets\\_GameAssets\\Services\\AdsManager.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T02:39:30.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Knift.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\Knife\\Knift.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T02:36:40.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "BombWire.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\BombWire.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T02:02:25.633Z"
+              "WhenOpened": "2024-11-16T13:58:29.995Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "PingPongMover.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\PingPongMover.cs",
+              "Title": "NativeAdHandler.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Native\\Prefabs\\NativeAdHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Native\\Prefabs\\NativeAdHandler.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Native\\Prefabs\\NativeAdHandler.cs",
+              "RelativeToolTip": "Assets\\Native\\Prefabs\\NativeAdHandler.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAUwLYAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T01:43:26.507Z"
+              "WhenOpened": "2024-11-16T12:19:01.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AdsUtils.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdsUtils.cs",
+              "RelativeDocumentMoniker": "Assets\\_GameAssets\\Services\\AdsUtils.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdsUtils.cs",
+              "RelativeToolTip": "Assets\\_GameAssets\\Services\\AdsUtils.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAASwJwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:22:38.176Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "Knift.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\Knift.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\Knift.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\Knift.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\Knift.cs",
+              "Title": "GoogleMobileAdsManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\GoogleMobileAdsManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_GameAssets\\Services\\GoogleMobileAdsManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\GoogleMobileAdsManager.cs",
+              "RelativeToolTip": "Assets\\_GameAssets\\Services\\GoogleMobileAdsManager.cs",
+              "ViewState": "AgIAABkCAAAAAAAAAAAqwDQCAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T02:44:05.161Z"
+              "WhenOpened": "2024-11-16T12:26:07.43Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "LinecastCutter.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\SpriteCutter\\_Example\\LinecastCutter.cs",
-              "RelativeDocumentMoniker": "Assets\\SpriteCutter\\_Example\\LinecastCutter.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\SpriteCutter\\_Example\\LinecastCutter.cs",
-              "RelativeToolTip": "Assets\\SpriteCutter\\_Example\\LinecastCutter.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwDoAAAAGAAAA",
+              "Title": "AdsKeysManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdsKeysManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_GameAssets\\Services\\AdsKeysManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdsKeysManager.cs",
+              "RelativeToolTip": "Assets\\_GameAssets\\Services\\AdsKeysManager.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T02:38:39.199Z"
+              "WhenOpened": "2024-11-16T12:25:44.075Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
-              "Title": "KnifeThrowManager.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs",
-              "ToolTip": "D:\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs",
-              "RelativeToolTip": "..\\..\\..\\UnityProjects\\Test\\My project\\Assets\\KnifeThrowManager.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwB0AAAAAAAAA",
+              "Title": "RemoteConfigControl.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\RemoteConfigControl.cs",
+              "RelativeDocumentMoniker": "Assets\\_GameAssets\\Services\\RemoteConfigControl.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\RemoteConfigControl.cs",
+              "RelativeToolTip": "Assets\\_GameAssets\\Services\\RemoteConfigControl.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T02:26:24.804Z"
+              "WhenOpened": "2024-11-16T13:13:44.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AdmobPrivacy.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdmobPrivacy.cs",
+              "RelativeDocumentMoniker": "Assets\\_GameAssets\\Services\\AdmobPrivacy.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\AdmobPrivacy.cs",
+              "RelativeToolTip": "Assets\\_GameAssets\\Services\\AdmobPrivacy.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAASwGYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:20:06.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BannerBackground.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\BannerBackground.cs",
+              "RelativeDocumentMoniker": "Assets\\_GameAssets\\Services\\BannerBackground.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\_GameAssets\\Services\\BannerBackground.cs",
+              "RelativeToolTip": "Assets\\_GameAssets\\Services\\BannerBackground.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:24:03.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Level20Manager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level20Manager.cs",
+              "RelativeDocumentMoniker": "Assets\\Level20Manager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level20Manager.cs",
+              "RelativeToolTip": "Assets\\Level20Manager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAnwCcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T17:26:47.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ElectricWireManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\ElectricWireManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Acne\\Building\\ElectricWireManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\ElectricWireManager.cs",
+              "RelativeToolTip": "Assets\\Acne\\Building\\ElectricWireManager.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T20:13:33.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Level16Manager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level16Manager.cs",
+              "RelativeDocumentMoniker": "Assets\\Level16Manager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level16Manager.cs",
+              "RelativeToolTip": "Assets\\Level16Manager.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T20:09:10.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Level15Manager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level15Manager.cs",
+              "RelativeDocumentMoniker": "Assets\\Level15Manager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level15Manager.cs",
+              "RelativeToolTip": "Assets\\Level15Manager.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwC0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T20:07:33.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SpritePixelColorChecker.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Acne\\SpritePixelColorChecker.cs",
+              "RelativeDocumentMoniker": "Assets\\Acne\\SpritePixelColorChecker.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Acne\\SpritePixelColorChecker.cs",
+              "RelativeToolTip": "Assets\\Acne\\SpritePixelColorChecker.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwFIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T20:05:41.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CarParkGameManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level\\Level8\\Carparking\\CarParkGameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Level\\Level8\\Carparking\\CarParkGameManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level\\Level8\\Carparking\\CarParkGameManager.cs",
+              "RelativeToolTip": "Assets\\Level\\Level8\\Carparking\\CarParkGameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:43:09.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CuttingLevelManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Cutting Level\\CuttingLevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Cutting Level\\CuttingLevelManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Cutting Level\\CuttingLevelManager.cs",
+              "RelativeToolTip": "Assets\\Cutting Level\\CuttingLevelManager.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAcwFgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:27:11.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BoomWireManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level\\Level4\\BomberWire\\BoomWireManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Level\\Level4\\BomberWire\\BoomWireManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level\\Level4\\BomberWire\\BoomWireManager.cs",
+              "RelativeToolTip": "Assets\\Level\\Level4\\BomberWire\\BoomWireManager.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAlwEYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:25:56.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PingPongMover.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level\\Level4\\BomberWire\\PingPongMover.cs",
+              "RelativeDocumentMoniker": "Assets\\Level\\Level4\\BomberWire\\PingPongMover.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level\\Level4\\BomberWire\\PingPongMover.cs",
+              "RelativeToolTip": "Assets\\Level\\Level4\\BomberWire\\PingPongMover.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwHMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:21:24.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Lv3Manager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Lv3Manager.cs",
+              "RelativeDocumentMoniker": "Assets\\Lv3Manager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Lv3Manager.cs",
+              "RelativeToolTip": "Assets\\Lv3Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:43:16.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Setting.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Setting.cs",
+              "RelativeDocumentMoniker": "Assets\\Setting.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Setting.cs",
+              "RelativeToolTip": "Assets\\Setting.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwE0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T19:01:04.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "WaterMelonLevelManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
+              "RelativeToolTip": "Assets\\WaterMeloneLevel\\WaterMelonLevelManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:31:06.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SaveTheDogManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Save the Dog\\SaveTheDogManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Save the Dog\\SaveTheDogManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Save the Dog\\SaveTheDogManager.cs",
+              "RelativeToolTip": "Assets\\Save the Dog\\SaveTheDogManager.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAkwGEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:23:47.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ObjectPool.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\VTT\\UI\\ObjectPool.cs",
+              "RelativeDocumentMoniker": "Assets\\VTT\\UI\\ObjectPool.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\VTT\\UI\\ObjectPool.cs",
+              "RelativeToolTip": "Assets\\VTT\\UI\\ObjectPool.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T12:40:59.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "KinfeWaterMelonLevel.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
+              "RelativeDocumentMoniker": "Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
+              "RelativeToolTip": "Assets\\WaterMeloneLevel\\KinfeWaterMelonLevel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:31:21.408Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "SpineAnimationController.cs",
-              "DocumentMoniker": "D:\\ticktock\\Test\\My project\\Assets\\SpineAnimationController.cs",
-              "RelativeDocumentMoniker": "Assets\\SpineAnimationController.cs",
-              "ToolTip": "D:\\ticktock\\Test\\My project\\Assets\\SpineAnimationController.cs",
-              "RelativeToolTip": "Assets\\SpineAnimationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Title": "CockroachLevelManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\CockroachLevel\\CockroachLevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\CockroachLevel\\CockroachLevelManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\CockroachLevel\\CockroachLevelManager.cs",
+              "RelativeToolTip": "Assets\\CockroachLevel\\CockroachLevelManager.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwFkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T07:34:32.054Z"
+              "WhenOpened": "2024-11-15T12:06:48.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Level20Support.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level20Support.cs",
+              "RelativeDocumentMoniker": "Assets\\Level20Support.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level20Support.cs",
+              "RelativeToolTip": "Assets\\Level20Support.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T17:30:24.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BallManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\BallManager.cs",
+              "RelativeDocumentMoniker": "Assets\\BallManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\BallManager.cs",
+              "RelativeToolTip": "Assets\\BallManager.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwD4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:54:06.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CityBuildingManager.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\CityBuildingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Acne\\Building\\CityBuildingManager.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Acne\\Building\\CityBuildingManager.cs",
+              "RelativeToolTip": "Assets\\Acne\\Building\\CityBuildingManager.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAcwHAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:20:51.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Plugins\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Assets\\Plugins\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Plugins\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Assets\\Plugins\\Android\\AndroidManifest.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-11-14T18:27:40.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BallController.cs",
+              "DocumentMoniker": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level\\Level13\\Ball\\BallController.cs",
+              "RelativeDocumentMoniker": "Assets\\Level\\Level13\\Ball\\BallController.cs",
+              "ToolTip": "C:\\Users\\84347\\Downloads\\New folder (2)\\ticktock\\Test\\My project\\Assets\\Level\\Level13\\Ball\\BallController.cs",
+              "RelativeToolTip": "Assets\\Level\\Level13\\Ball\\BallController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:20:26.012Z"
             }
           ]
         }

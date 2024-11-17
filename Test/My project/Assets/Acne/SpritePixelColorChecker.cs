@@ -42,7 +42,7 @@ public class SpritePixelColorChecker : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
-
+        UIManager.I.buttonActive.DeActive();
         DOVirtual.DelayedCall(1.3f, () =>
         {
             if (Win)
@@ -80,7 +80,7 @@ public class SpritePixelColorChecker : MonoBehaviour
         {
             isDragging = false;
         }
-        if (!End)
+        if (!End && !UIManager.I._pause)
         {
             timer -= Time.deltaTime;
             UIManager.I.ChangeTime((int)timer);

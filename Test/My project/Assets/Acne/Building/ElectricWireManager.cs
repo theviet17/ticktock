@@ -19,7 +19,7 @@ public class ElectricWireManager : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
-
+        UIManager.I.buttonActive.DeActive();
         DOVirtual.DelayedCall(1.3f, () =>
         {
             if (Win)
@@ -36,7 +36,7 @@ public class ElectricWireManager : MonoBehaviour
     }
     private void Update()
     {
-        if (!End)
+        if (!End && !UIManager.I._pause)
         {
             timer -= Time.deltaTime;
             UIManager.I.ChangeTime((int)timer);

@@ -37,7 +37,7 @@ public class Level20Manager : MonoBehaviour
             egg.sprite = eggSprite[idTrueEgg];
         }
 
-        StartCoroutine(ReSpawnEgg());
+        StartCoroutine("ReSpawnEgg");
 
         string nameEgg = idTrueEgg == 0 ? "Yellow eggs " : "Brown eggs ";
         UIManager.I.ShowRequest(true, nameEgg + "request: " + eggRequest, currentEgg.ToString());
@@ -48,7 +48,7 @@ public class Level20Manager : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
-
+        UIManager.I.buttonActive.DeActive();
         DOVirtual.DelayedCall(1.3f, () =>
         {
             if (Win)
@@ -75,7 +75,7 @@ public class Level20Manager : MonoBehaviour
 
     private void Update()
     {
-        if (!End)
+        if (!End && !UIManager.I._pause)
         {
             timer -= Time.deltaTime;
             UIManager.I.ChangeTime((int)timer);
@@ -94,7 +94,13 @@ public class Level20Manager : MonoBehaviour
         {
             EndGame();
         }
+        if (!End)
+        {
+            Check();
+        }
         
+
+
     }
     private void FixedUpdate()
     {
@@ -121,8 +127,10 @@ public class Level20Manager : MonoBehaviour
             float randomDelayTime = Random.Range(minDelayTime, maxDelayTime);
 
             yield return new WaitForSeconds(randomDelayTime);
+
             randomDelayTime = Random.Range(minDelayTime, maxDelayTime);
             SpawnEgg();
+
         }
     }
     void SpawnEgg()
@@ -211,5 +219,37 @@ public class Level20Manager : MonoBehaviour
             }
         }
         StopCoroutine("ReSpawnEgg");
+    }
+    bool pause = false;
+    void Check()
+    {
+        if (UIManager.I._pause && !pause)
+        {
+            StopCoroutine("ReSpawnEgg");
+            Debug.Log("DUng roi nưa");
+            pause = true;
+            for (int i = 0; i < eggs.Count; i++)
+            {
+                Rigidbody2D rb = eggs[i].GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    rb.simulated = false;
+                }
+            }
+        }
+        else if (!UIManager.I._pause && pause)
+            {
+               StartCoroutine("ReSpawnEgg");
+                Debug.Log("roi nưa");
+                pause = false;
+                for (int i = 0; i < eggs.Count; i++)
+                {
+                    Rigidbody2D rb = eggs[i].GetComponent<Rigidbody2D>();
+                    if (rb != null)
+                    {
+                    rb.simulated = true;
+                }
+                }
+            }
     }
 }

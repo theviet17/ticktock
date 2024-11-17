@@ -9,6 +9,8 @@ using UnityEngine.Android;
 using TMPro;
 using UnityEngine.EventSystems;
 using MoreMountains.NiceVibrations;
+using BaseService;
+using GoogleMobileAds.Api;
 
 
 [Serializable]
@@ -117,15 +119,19 @@ public class UIManager : MonoBehaviour
             })
             .OnComplete(() =>
             {
-                _loadingPanel.gameObject.SetActive(false);
-                ChangeMusic(bg_music);
-                ShowOffHomePanel();
-                
-
-                DOVirtual.DelayedCall(0.7f, () =>
+                AppOpenAdManager.Instance.ShowAdIfAvailable(actionDone: () =>
                 {
-                    buttonActive.Active();
+                    _loadingPanel.gameObject.SetActive(false);
+                    ChangeMusic(bg_music);
+                    ShowOffHomePanel();
+
+
+                    DOVirtual.DelayedCall(0.7f, () =>
+                    {
+                        buttonActive.Active();
+                    });
                 });
+
             });
     }
 
@@ -145,6 +151,11 @@ public class UIManager : MonoBehaviour
 
     void ShowOffHomePanel(bool open = true)
     {
+        if (open)
+        {
+            AdsUtils.HideAndDestroyBannerNormal();
+            AdsUtils.LoadAndShowBannerNormal(true);
+        }
         buttonActive.DeActive();
         DOVirtual.DelayedCall(open ? 0 : 1f, () =>
         {
@@ -240,7 +251,7 @@ public class UIManager : MonoBehaviour
         return false; // Không có button dưới chuột
     }
 
-
+    public NativeAdHandler ingameNative;
     void OpenIngamePanel(bool open = true)
     {
         DOVirtual.DelayedCall(open ? 0 : 1f, () =>
@@ -252,7 +263,7 @@ public class UIManager : MonoBehaviour
         UIAnimation.HorizontalTween(home_Button.gameObject, 0.5f, open);
         
         UIAnimation.VerticalTween(level, 0.5f, open, _camera, UIAnimation.Direction.top,0, -139.9f);
-        UIAnimation.VerticalTween(tempPlace, 0.5f, open, _camera, UIAnimation.Direction.top, 0, -307.6f);
+        UIAnimation.VerticalTween(tempPlace, 0.5f, open, _camera, UIAnimation.Direction.top, 0, -400);
         if(open)
         {
             UIAnimation.Fade(manche, 1f, !open, 1);
@@ -270,6 +281,7 @@ public class UIManager : MonoBehaviour
        
       
     }
+ 
     void ButtonListener()
     {
         playButton.onClick.AddListener(LoadScene);
@@ -280,7 +292,10 @@ public class UIManager : MonoBehaviour
 
 
         home_Button.onClick.AddListener(BackHome);
+      
     }
+    public bool _pause;
+
     void BackHome()
     {
         buttonActive.DeActive();
@@ -389,29 +404,43 @@ public class UIManager : MonoBehaviour
     }
     public void LevelUp()
     {
-        //int currentLevel = PlayerPrefs.GetInt(CurrentLevelID);
-        //currentLevel++;
-        //if (currentLevel > 19)
-        //{
-        //    currentLevel = 0;
-        //}
-        //PlayerPrefs.SetInt(CurrentLevelID, currentLevel);
-       
+        int currentLevel = PlayerPrefs.GetInt(CurrentLevelID);
+        currentLevel++;
+        if (currentLevel > 19)
+        {
+            currentLevel = 0;
+        }
+        PlayerPrefs.SetInt(CurrentLevelID, currentLevel);
+
     }
+    public int currentSceneLoad;
+    //4ECAFC
+    public Color colorNormal;
+    public Color color13;
     public void LoadLevel()
     {
-       
+        ingameNative.ReLoadNative();
+
+        AdsUtils.HideAndDestroyBannerNormal();
+        AdsUtils.LoadAndShowBannerNormal(true);
+
         int currentLevel = PlayerPrefs.GetInt(CurrentLevelID);
 
         if (PlayerPrefs.GetInt(CurrentLevelID) == 12)
         {
+            bg_Ingame.color = color13;
             TurnOnMusic(false);
         }
+        else
+        {
+            bg_Ingame.color = colorNormal;
+        }
 
-
-        string sceneName = (currentLevel + 1).ToString();
+        currentSceneLoad = currentLevel + 1;
+        string sceneName = currentSceneLoad.ToString();
         level.GetComponentInChildren<TMP_Text>().text ="Level " + sceneName;
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        _pause = false;
 
         //manche.GetComponent<SpriteRenderer>().DOFade(0, 1);
         //asyncOperation.completed += (AsyncOperation op) =>
@@ -427,7 +456,7 @@ public class UIManager : MonoBehaviour
         //            {
         //                manche = obj;   
         //                Debug.Log("Found object: " + obj.name);
-                       
+
         //                // Thực hiện hành động với obj
         //            }
         //        }
@@ -452,8 +481,7 @@ public class UIManager : MonoBehaviour
             }
         }
 
-        int currentLevel = PlayerPrefs.GetInt(CurrentLevelID);
-        string sceneName = (currentLevel + 1).ToString();
+        string sceneName = currentSceneLoad.ToString();
         // Unload Scene B
         AsyncOperation unloadOperation = SceneManager.UnloadSceneAsync(sceneName);
     }
@@ -711,6 +739,92 @@ public class UIManager : MonoBehaviour
         }
     }
 }
+//public class LoadRewardedAd : MonoBehaviour
+//{
+//    private RewardedAd rewardedAd;
+
+//#if UNITY_ANDROID
+//    private string adUnitId = "ca-app-pub-3940256099942544/5224354917";
+//#elif UNITY_IPHONE
+//        private string adUnitId = "ca-app-pub-3940256099942544/1712485313";
+//#else
+//        private string adUnitId = "unused";
+//#endif
+
+//    void Start()
+//    {
+//        MobileAds.Initialize(initStatus => { });
+//        LoadAd();
+//    }
+
+//    public void LoadAd()
+//    {
+//        // Clean up old ad
+//        if (rewardedAd != null)
+//        {
+//            rewardedAd.Destroy();
+//        }
+
+//        rewardedAd =  RewardedAd.Load(_adUnitId, adRequest,
+//          (RewardedAd ad, LoadAdError error) =>
+//          {
+//              // if error is not null, the load request failed.
+//              if (error != null || ad == null)
+//              {
+//                  Debug.LogError("Rewarded ad failed to load an ad " +
+//                                 "with error : " + error);
+//                  return;
+//              }
+
+//              Debug.Log("Rewarded ad loaded with response : "
+//                        + ad.GetResponseInfo());
+
+//              _rewardedAd = ad;
+//          });
+
+//        rewardedAd.OnAdLoaded += HandleOnAdLoaded;
+//        rewardedAd.OnAdFailedToLoad += HandleOnAdFailedToLoad;
+//        rewardedAd.OnAdOpening += HandleOnAdOpening;
+//        rewardedAd.OnAdClosed += HandleOnAdClosed;
+
+//        AdRequest request = new AdRequest.Builder().Build();
+//        rewardedAd.LoadAd(request);
+//    }
+
+//    public void ShowAd()
+//    {
+//        if (rewardedAd.IsLoaded())
+//        {
+//            rewardedAd.Show();
+//        }
+//        else
+//        {
+//            Debug.Log("Rewarded ad is not loaded yet.");
+//        }
+//    }
+
+//    private void HandleOnAdLoaded(object sender, System.EventArgs args)
+//    {
+//        Debug.Log("Rewarded ad loaded successfully.");
+//    }
+
+//    private void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
+//    {
+//        Debug.LogError("Failed to load rewarded ad: " + args.Message);
+//    }
+
+//    private void HandleOnAdOpening(object sender, System.EventArgs args)
+//    {
+//        Debug.Log("Rewarded ad is opening.");
+//    }
+
+//    private void HandleOnAdClosed(object sender, System.EventArgs args)
+//    {
+//        Debug.Log("Rewarded ad is closed.");
+//        LoadAd(); // Reload the ad after it is closed
+//    }
+//}
+
 public class LoadingScene : MonoBehaviour
 {
     //public Slider loadingBar;

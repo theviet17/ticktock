@@ -51,7 +51,7 @@ public class BoomWireManager : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
-
+        UIManager.I.buttonActive.DeActive();
         DOVirtual.DelayedCall(1.3f, () =>
         {
             if (Win)
@@ -68,7 +68,7 @@ public class BoomWireManager : MonoBehaviour
     }
     private void Update()
     {
-        if (!End)
+        if (!End && !UIManager.I._pause)
         {
             timer -= Time.deltaTime;
             timeTick.text = ((int)timer).ToString();

@@ -28,7 +28,6 @@ public class KnifeThrowManager : MonoBehaviour
     public int count = 0;
 
     public float timer = 15;
-    
 
     public void UnActive()
     {
@@ -49,6 +48,7 @@ public class KnifeThrowManager : MonoBehaviour
         UIManager.I.ShowRequest(true, "Radish request: " + requset, count.ToString());
         UIManager.I.ShowTime(true, (int)timer);
     }
+
     public void ChargeCount()
     {
         count++;
@@ -77,7 +77,7 @@ public class KnifeThrowManager : MonoBehaviour
 
     void Update()
     {
-        if (Active)
+        if (Active && !UIManager.I._pause)
         {
             timer -= Time.deltaTime;
             UIManager.I.ChangeTime((int)timer);
@@ -106,7 +106,8 @@ public class KnifeThrowManager : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => !Active);
-        
+
+        UIManager.I.buttonActive.DeActive();
         DOVirtual.DelayedCall(1.3f, () =>
         {
             if (count >= requset)

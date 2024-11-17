@@ -59,7 +59,7 @@ public class CityBuildingManager : MonoBehaviour
     IEnumerator WaitEnd()
     {
         yield return new WaitUntil(() => End);
-
+        UIManager.I.buttonActive.DeActive();
         DOVirtual.DelayedCall(2f, () =>
         {
             if (Win)
@@ -110,7 +110,7 @@ public class CityBuildingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!End)
+        if (!End && !UIManager.I._pause)
         {
             timer -= Time.deltaTime;
             UIManager.I.ChangeTime((int)timer);

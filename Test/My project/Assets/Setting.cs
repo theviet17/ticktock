@@ -74,6 +74,7 @@ public class Setting : MonoBehaviour
     }
     public void Open()
     {
+        UIManager.I._pause = true;
         UIManager.I.buttonActive.DeActive();
         Debug.Log(1);
         UIManager.I._settingPanel.gameObject.SetActive(true);
@@ -89,6 +90,7 @@ public class Setting : MonoBehaviour
     }
     public void Close()
     {
+        UIManager.I._pause = false;
         UIManager.I.buttonActive.DeActive();
         UIAnimation.Fade(bg, 0.5f, false, 0.9f);
         UIAnimation.VerticalTween(box, 0.5f, false, UIManager.I._camera, UIAnimation.Direction.top);
