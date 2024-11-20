@@ -218,6 +218,7 @@ public class EndGameLoad : MonoBehaviour
     {
         if(winCount >= 2)
         {
+            UIManager.I.buttonActive.DeActive();
             UIManager.I.interval.ShowInterstitial(() =>
             {
                 OpenWinPanel(false);
@@ -233,6 +234,7 @@ public class EndGameLoad : MonoBehaviour
     {
         if (loseCount >= 2)
         {
+            UIManager.I.buttonActive.DeActive();
             UIManager.I.interval.ShowInterstitial(() =>
             {
                 OpenLosePanel(false);

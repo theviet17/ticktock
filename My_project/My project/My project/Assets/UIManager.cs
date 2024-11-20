@@ -165,7 +165,7 @@ public class UIManager : MonoBehaviour
 
     public GameObject _settingPanel;
     public Camera _camera;
-
+    public CanvasGroup teeBreakPanel;
     
 
     void ShowOffHomePanel(bool open = true)
@@ -201,6 +201,7 @@ public class UIManager : MonoBehaviour
         endGameLoad.losePanel.gameObject.SetActive(false);
         endGameLoad.winPanel.gameObject.SetActive(false);
         votePanel.gameObject.SetActive(false);
+        teeBreakPanel.gameObject.SetActive(false);
     }
 
 

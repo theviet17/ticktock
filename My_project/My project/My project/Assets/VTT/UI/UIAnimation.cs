@@ -235,7 +235,7 @@ public class UIAnimation
     /// <param name="duration"> khoảng thời gian fade </param>
     /// <param name="isOpening">trạng thái target là mở hay đóng</param>
     /// <param name="maxOpacity"></param>
-    public static void FadeTween(CanvasGroup cg, float duration, bool isOpening, float maxOpacity = 0.9f)
+    public static void Fade(CanvasGroup cg, float duration, bool isOpening, float maxOpacity = 0.9f)
     {
         float targetOpacity = isOpening ? maxOpacity : 0;
         cg.alpha = isOpening ? 0 : maxOpacity;

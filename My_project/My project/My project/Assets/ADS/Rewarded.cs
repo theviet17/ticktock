@@ -1,6 +1,8 @@
-﻿using System;
+﻿using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Rewarded : MonoBehaviour
@@ -50,9 +52,20 @@ public class Rewarded : MonoBehaviour
     {
         if (MaxSdk.IsRewardedAdReady(adUnitId))
         {
-            isRewardedLoaded = false;
-            rewardAction = onRewardComplete; // Lưu hành động để gọi khi xem xong quảng cáo
-            MaxSdk.ShowRewardedAd(adUnitId);
+            float timeBreak = 1f;
+            UIManager.I.teeBreakPanel.gameObject.SetActive(true);
+            UIAnimation.Fade(UIManager.I.teeBreakPanel, 0.3f, true, 0.98f);
+            UIManager.I.teeBreakPanel.GetComponentInChildren<TMP_Text>().text = "Skipping...";
+            DOVirtual.DelayedCall(timeBreak, () =>
+            {
+                isRewardedLoaded = false;
+                rewardAction = onRewardComplete; // Lưu hành động để gọi khi xem xong quảng cáo
+                MaxSdk.ShowRewardedAd(adUnitId);
+
+                UIManager.I.teeBreakPanel.gameObject.SetActive(false);
+
+            });
+            
         }
         else
         {
