@@ -118,6 +118,7 @@ public class EndGameLoad : MonoBehaviour
                 
                 bg.DOFade(1, 0.5f).OnComplete(() =>
                 {
+                    UIManager.I.ShowRequest(false, "0", "0");
                     UIManager.I.UnLoadScene();
                     
                     DOVirtual.DelayedCall(0.1f, () =>
