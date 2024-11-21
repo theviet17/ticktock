@@ -36,7 +36,7 @@ public class Rewarded : MonoBehaviour
 
     public void LoadRewardedAd()
     {
-        if (!isRewardedLoaded)
+        if (!MaxSdk.IsRewardedAdReady(adUnitId))
         {
             
             MaxSdk.LoadRewardedAd(adUnitId);

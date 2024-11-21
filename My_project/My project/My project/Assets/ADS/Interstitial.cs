@@ -37,7 +37,7 @@ public class Interstitial : MonoBehaviour
         //Debug.Log("Loading interstitial ad...");
         //MaxSdk.LoadInterstitial(adUnitId);
         // Kiểm tra nếu quảng cáo interstitial chưa được tải và chưa hiển thị
-        if (!isInterstitialLoaded)
+        if (!MaxSdk.IsInterstitialReady(adUnitId))
         {
             MaxSdk.LoadInterstitial(adUnitId);
             Debug.Log("Loading interstitial ad...");
